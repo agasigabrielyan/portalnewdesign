@@ -1,21 +1,19 @@
 window.onload = function() {
     var simple = [
-        {x: 0, y: 0, w: 4, h: 2, content: '1'},
-        {x: 4, y: 0, w: 4, h: 4, content: '2'},
-        {x: 8, y: 0, w: 2, h: 2, content: '<p class="card-text text-center" style="margin-bottom: 0">Drag me!<p class="card-text text-center"style="margin-bottom: 0"><ion-icon name="hand" style="font-size: 300%"></ion-icon>'},
-        {x: 10, y: 0, w: 2, h: 2, content: '4'},
-        {x: 0, y: 2, w: 2, h: 2, content: '5'},
-        {x: 2, y: 2, w: 2, h: 4, content: '6'},
-        {x: 8, y: 2, w: 4, h: 2, content: '7'},
-        {x: 0, y: 4, w: 2, h: 2, content: '8'},
-        {x: 4, y: 4, w: 4, h: 2, content: '9'},
-        {x: 8, y: 4, w: 2, h: 2, content: '10'},
-        {x: 10, y: 4, w: 2, h: 2, content: '11'},
+        {x: 8, y: 0, w: 4, h: 6, content: '1'},
+        {x: 0, y: 0, w: 8, h: 3, content: '2'},
+        {x: 0, y: 0, w: 8, h: 3, content: '3'},
+        {x: 8, y: 6, w: 4, h: 5, content: '4'},
+        {x: 0, y: 6, w: 4, h: 3, content: '5'},
+        {x: 4, y: 9, w: 4, h: 2, content: '6'},
+        {x: 4, y: 11, w: 8, h: 3, content: '7'},
+        {x: 0, y: 9, w: 4, h: 5, content: '8'},
+        {x: 4, y: 6, w: 4, h: 3, content: '9'},
     ];
 
     var simpleGrid = GridStack.init({
         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-        margin: 5,
+        margin: 7.5,
     }, '#simple-grid');
     simpleGrid.load(simple);
 }
