@@ -1,87 +1,9 @@
-/**BEGINFONTS**/
-/** font-size: 25px = 2vh **/
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-Medium.eot');
-    src: url('./fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-Medium.woff2') format('woff2'),
-    url('./fonts/Manrope-Medium.woff') format('woff'),
-    url('./fonts/Manrope-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-ExtraBold.eot');
-    src: url('./fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-ExtraBold.woff2') format('woff2'),
-    url('./fonts/Manrope-ExtraBold.woff') format('woff'),
-    url('./fonts/Manrope-ExtraBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-Bold.eot');
-    src: url('./fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-Bold.woff2') format('woff2'),
-    url('./fonts/Manrope-Bold.woff') format('woff'),
-    url('./fonts/Manrope-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-ExtraLight.eot');
-    src: url('./fonts/Manrope-ExtraLight.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-ExtraLight.woff2') format('woff2'),
-    url('./fonts/Manrope-ExtraLight.woff') format('woff'),
-    url('./fonts/Manrope-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-Light.eot');
-    src: url('./fonts/Manrope-Light.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-Light.woff2') format('woff2'),
-    url('./fonts/Manrope-Light.woff') format('woff'),
-    url('./fonts/Manrope-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-Regular.eot');
-    src: url('./fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-Regular.woff2') format('woff2'),
-    url('./fonts/Manrope-Regular.woff') format('woff'),
-    url('./fonts/Manrope-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: url('./fonts/Manrope-SemiBold.eot');
-    src: url('./fonts/Manrope-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/Manrope-SemiBold.woff2') format('woff2'),
-    url('./fonts/Manrope-SemiBold.woff') format('woff'),
-    url('./fonts/Manrope-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-/**endfonts**/
+@import url('fonts.css');
+
 html,body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', serif;
+    font-family: 'Roboto', serif;
     font-style: normal;
 }
 html {
@@ -95,45 +17,43 @@ body {-ms-overflow-style: none;}
 
 .hat {
     background-color: #003F73;
-    height: 5vh;
+    height: 60px;
+    font-family: Manrope, serif;
 }
 .hat__inner {
     height: 100%;
-    width: 65.1%;
+    width: 1268px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-style: normal;
     font-weight: 600;
-    font-size: 2vh;
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
+    font-size: 25px;
 }
 
-.header{
-    margin-bottom: 0.5vh;
-}
 .header__inner {
-    width: 65.1%;
+    width: 1268px;
     margin: 0 auto;
 }
 
 .header__heading {
     color: #fff;
-    font-size: 1.5vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0;
 }
 
 .header__buttons {
     display: flex;
-    margin-bottom: 1vh;
+    margin-bottom: 10px;
 }
 .header__button {
-    width: 17.5%;
-    font-size: 1.75vh;
+    width: 140px;
+    height: 50px;
     background-color: #005FAD;
     color: #fff;
     margin-right: 1%;
@@ -141,12 +61,11 @@ body {-ms-overflow-style: none;}
     border: none;
     text-align: left;
     cursor: pointer;
-    padding-left: 1%;
-    border-radius: 1.25vh;
-    line-height: 2vh;
-    padding-top: 0.75vh;
-    padding-bottom: 0.75vh;
+    border-radius: 12px;
     box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 6px 0 6px 10px;
 }
 .header__button img {
     position: absolute;
@@ -161,8 +80,8 @@ body {-ms-overflow-style: none;}
 }
 .header__search input {
     width: 100%;
-    height: 4vh;
-    border-radius: 3vh;
+    height: 50px;
+    border-radius: 20px;
     border: none;
     outline: none;
     text-align: center;
