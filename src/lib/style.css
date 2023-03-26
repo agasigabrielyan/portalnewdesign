@@ -139,6 +139,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 1720px;
     margin: 0 auto;
     display: flex;
+    margin-bottom: 40px;
 }
 .header-slider__banner {
     width: 20%;
@@ -155,42 +156,25 @@ input[type="search"]::-webkit-search-results-decoration {
 .header-slider__banner:last-child {
     margin-right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.grid-stack {
-    width: 50%;
-    border: 1px solid red;
+.portal-grid {
+    margin-bottom: 120px;
+}
+.portal-grid__inner {
+    width: 1268px;
     margin: 0 auto;
 }
+.grid-stack {
+    width: 100%;
+}
 .grid-stack-item {
-    border: 1px solid orange;
     margin: 15px;
     height: 0;
     padding-top: 50%;
+}
+.footer {
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003F73;
 }
