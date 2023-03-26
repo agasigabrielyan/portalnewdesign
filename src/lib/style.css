@@ -4,12 +4,17 @@ html,body {
     padding: 0;
     font-family: 'Roboto', serif;
     font-style: normal;
-}
-html {
     background-image: url('../images/wallpaper.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 0 0;
+}
+html {
+
+}
+body {
+    height: 100%;
+    width: 100%;
 }
 body::-webkit-scrollbar {  display: none;}
 body {-ms-overflow-style: none;}
@@ -157,7 +162,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 0;
 }
 .portal-grid {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .portal-grid__inner {
     width: 1268px;
