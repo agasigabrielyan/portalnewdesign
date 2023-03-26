@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Прототип</title>
 
-	<link rel="stylesheet" href="./src/gridstack/gridstack.min.css" />
-    <link rel="stylesheet" href="./src/style.css" />
+	<link rel="stylesheet" href="./src/lib/gridstack/gridstack.min.css" />
+    <link rel="stylesheet" href="./src/lib/style.css" />
 </head>
     <body>
         <div class="hat">
@@ -55,11 +55,34 @@
                 </div>
             </div>
         </div>
-        <div class="header-slider">Слайдер</div>
-
-        <div id="simple-grid" class="grid-stack"></div>
-
-        <script src="./src/gridstack/gridstack.all.js"></script>
-        <script src="./src/script.js"></script>
+        <div class="header-slider">
+            <div class="header-slider__inner">
+                <div class="header-slider__banner">
+                    Баннер
+                </div>
+                <div class="header-slider__banner">
+                    Баннер
+                </div>
+                <div class="header-slider__banner">
+                    Баннер
+                </div>
+                <div class="header-slider__banner">
+                    Баннер
+                </div>
+                <div class="header-slider__banner">
+                    Баннер
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div id="simple-grid" class="grid-stack"></div>
+        </div>
+        <div class="footer">
+            <div class="footer__inner">
+                
+            </div>
+        </div>
+        <script src="./src/lib/gridstack/gridstack.all.js"></script>
+        <script src="./src/lib/script.js"></script>
     </body>
 </html>
