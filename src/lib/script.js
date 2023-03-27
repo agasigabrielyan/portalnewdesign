@@ -2,7 +2,7 @@ window.onload = function() {
     var simple = [
         {x: 8, y: 0, w: 4, h: 6, content: '1'},
         {x: 0, y: 0, w: 8, h: 3, content: '2'},
-        {x: 0, y: 0, w: 8, h: 3, content: '3'},
+        {x: 0, y: 0, w: 8, h: 3, content: 'Наведи на иконку снизу справа и измени меня'},
         {x: 8, y: 6, w: 4, h: 5, content: '4'},
         {x: 0, y: 6, w: 4, h: 3, content: 'Перетащи меня'},
         {x: 4, y: 9, w: 4, h: 2, content: '6'},
