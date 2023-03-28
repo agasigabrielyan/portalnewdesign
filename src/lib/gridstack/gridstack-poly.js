@@ -13,6 +13,7 @@
     }
 
     function CustomEvent (event, params) {
+        debugger;
         params = params || {bubbles: false, cancelable: false, detail: null};
         var evt = document.createEvent('CustomEvent');
         evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
@@ -24,6 +25,7 @@
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN
 Number.isNaN = Number.isNaN || function isNaN(input) {
+    debugger;
     return typeof input === 'number' && input !== input;
 }
 
@@ -31,6 +33,7 @@ Number.isNaN = Number.isNaN || function isNaN(input) {
 if (!Array.prototype.find) {
     Object.defineProperty(Array.prototype, 'find', {
         value: function (predicate) {
+            debugger;
             // 1. Let O be ? ToObject(this value).
             if (this == null) {
                 throw TypeError('"this" is null or not defined');
@@ -124,6 +127,7 @@ if (!Array.prototype.findIndex) {
 // Source: https://github.com/jserz/js_piece/blob/master/DOM/ParentNode/append()/append().md
 (function (arr) {
     arr.forEach(function (item) {
+        debugger;
         if (item.hasOwnProperty('append')) {
             return;
         }
@@ -148,7 +152,9 @@ if (!Array.prototype.findIndex) {
 
 // from: https://github.com/jserz/js_piece/blob/master/DOM/Element/prepend()/prepend().md
 (function (arr) {
+    debugger;
     arr.forEach(function (item) {
+        debugger;
         item.prepend = item.prepend || function () {
             var argArr = Array.prototype.slice.call(arguments),
                 docFrag = document.createDocumentFragment();
@@ -169,6 +175,8 @@ if (!Array.prototype.findIndex) {
 if (!Array.prototype['forEach']) {
 
     Array.prototype.forEach = function(callback, thisArg) {
+
+        debugger;
 
         if (this == null) { throw new TypeError('Array.prototype.forEach called on null or undefined'); }
 
@@ -245,6 +253,7 @@ if (!Array.prototype['forEach']) {
 // https://github.com/jserz/js_piece/blob/master/DOM/ChildNode/remove()/remove().md
 (function (arr) {
     arr.forEach(function (item) {
+        debugger;
         if (item.hasOwnProperty('remove')) {
             return;
         }
@@ -279,6 +288,7 @@ if (!Element.prototype.matches) {
 // Production steps of ECMA-262, Edition 6, 22.1.2.1
 if (!Array.from) {
     Array.from = (function () {
+        debugger;
         var toStr = Object.prototype.toString;
         var isCallable = function (fn) {
             return typeof fn === 'function' || toStr.call(fn) === '[object Function]';
@@ -297,6 +307,7 @@ if (!Array.from) {
 
         // The length property of the from method is 1.
         return function from(arrayLike/*, mapFn, thisArg */) {
+            debugger;
             // 1. Let C be the this value.
             var C = this;
 
