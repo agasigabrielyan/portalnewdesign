@@ -1,20 +1,37 @@
 window.onload = function() {
     var simple = [
-        {x: 8, y: 0, w: 4, h: 6, content: '1'},
-        {x: 0, y: 0, w: 8, h: 3, content: '2'},
-        {x: 0, y: 0, w: 8, h: 3, content: '<div style="border:10px solid red; width: 100%; height: 100%;">Наведи на иконку снизу справа и измени меня</div>'},
-        {x: 8, y: 6, w: 4, h: 5, content: '4'},
-        {x: 0, y: 6, w: 4, h: 3, content: 'Перетащи меня'},
-        {x: 4, y: 9, w: 4, h: 2, content: '6'},
-        {x: 4, y: 11, w: 8, h: 3, content: '7'},
-        {x: 0, y: 9, w: 4, h: 5, content: '8'},
-        {x: 4, y: 6, w: 4, h: 3, content: 'Перетащи меня'},
+        {x: 0, y: 0, w: 2, h: 1, content: 'Совместная работа'},
+        {x: 2, y: 0, w: 1, h: 2, content: 'Мои услуги'},
+        {x: 0, y: 1, w: 2, h: 1, content: 'Мои события'},
+        {x: 0, y: 2, w: 1, h: 1, content: 'САД ПАО “Газпром”'},
+        {x: 1, y: 2, w: 1, h: 1, content: 'Статус АСЭЗ'},
+        {x: 2, y: 2, w: 1, h: 1, content: 'ПУР АСБУ'},
+        {x: 0, y: 3, w: 1, h: 2, content: 'Мои новости'},
+        {x: 1, y: 3, w: 1, h: 1, content: 'Мои системы'},
+        {x: 2, y: 3, w: 1, h: 1, content: 'Автобусы'},
+        {x: 1, y: 4, w: 2, h: 1, content: 'Мои запросы в службу поддержки'},
     ];
 
     var simpleGrid = GridStack.init({
         column: 3,
         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-        margin: 7.5,
+        margin: 10,
     }, '#simple-grid');
     simpleGrid.load(simple);
+
+    simpleGrid.on('dragstart', function(e, ui) {
+        var grid = this;
+        var element = e.target;
+        console.log('Драг начался');
+    });
+
+    simpleGrid.on('dragstop', function(e, ui) {
+        var grid = this;
+        var element = e.target;
+        console.log('ЗАКОНЧИЛИ УПРАЖНЕНИЕ');
+    });
+
+    simpleGrid.on("change", function(event, items) {
+        debugger;
+    });
 }
