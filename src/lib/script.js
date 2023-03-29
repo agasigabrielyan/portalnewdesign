@@ -14,6 +14,7 @@ window.onload = function() {
 
     var simpleGrid = GridStack.init({
         column: 3,
+        cellHeight: 260,
         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
         margin: 10,
     }, '#simple-grid');
