@@ -1,5 +1,5 @@
 window.onload = function() {
-    var simple = [
+    let simple = [
         {x: 0, y: 0, w: 2, h: 1, content: 'Совместная работа'},
         {x: 2, y: 0, w: 1, h: 2, content: 'Мои услуги'},
         {x: 0, y: 1, w: 2, h: 1, content: 'Мои события'},
@@ -12,12 +12,16 @@ window.onload = function() {
         {x: 1, y: 4, w: 2, h: 1, content: 'Мои запросы в службу поддержки'},
     ];
 
-    var simpleGrid = GridStack.init({
+    let simpleGrid = GridStack.init({
         column: 3,
         cellHeight: 260,
+        disableOneColumnMode: true,
+        disableDrag: true,
+        disableResize: true,
         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
         margin: 10,
     }, '#simple-grid');
+
     simpleGrid.load(simple);
 
     simpleGrid.on('dragstart', function(e, ui) {
@@ -35,4 +39,7 @@ window.onload = function() {
     simpleGrid.on("change", function(event, items) {
         debugger;
     });
+
+    let interfaceUI = new InterfaceUI(simpleGrid);
+    debugger;
 }
