@@ -1,6 +1,7 @@
 class InterfaceUI {
 
     constructor( simpleGrid ) {
+        this.layout = document.querySelector('html');
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
 
@@ -16,8 +17,11 @@ class InterfaceUI {
 
     // подготовливает среду для редактирования рабочего места
     prepareEditEnvironment() {
-        this.simpleGrid.opts.disableDrag = false;
-        this.simpleGrid.opts.disableResize = false;
+        if( !(this.layout.classList.contains('html__editable')) ) {
+            this.layout.classList.add('html__editable');
+        } else {
+            this.layout.classList.remove('html__editable');
+        }
     }
 
 }
