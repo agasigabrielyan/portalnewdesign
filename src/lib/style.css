@@ -23,6 +23,12 @@ html .ui-resizable-handle {
 .html__editable {
     background-image: url('../images/wallpaper-editable.jpg');
 }
+.ui-resizable-se {
+    display: none!important;
+}
+.html__editable .ui-resizable-se {
+    display: block!important;
+}
 body {
     background-color: transparent!important;
     font-style: normal;
