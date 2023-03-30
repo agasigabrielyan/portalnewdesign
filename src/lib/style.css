@@ -10,7 +10,7 @@ html {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 0 0;
-    transition: background-image 0.5s;
+    /*transition: background-image 0.5s;*/
 }
 .html__editable {
     background-image: url('../images/wallpaper-editable.jpg');
@@ -36,7 +36,16 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 60px;
     font-family: Manrope, serif;
     position: relative;
-    transition: height 0.35s;
+
+}
+.hat .hat__edit {
+    position: fixed;
+    top: -100000%;
+    left: -100000%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .hat_editable {
     z-index: 2;
@@ -57,9 +66,32 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #FFFFFF;
     font-size: 25px;
 }
+.hat_editable .hat__not-edit {
+    position: fixed;
+    top: -10000%;
+    left: -10000%;
+}
+.hat_editable .hat__edit {
+    position: relative;
+    top: auto;
+    left: auto;
+}
 .hat_editable .hat__inner {
 
 }
+.hat__widget-button {
+    background: #005FAD;
+    border-radius: 100px;
+    color: #fff;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    cursor: pointer;
+    position: relative;
+}
+
 .header__inner {
     width: 1268px;
     margin: 0 auto;
@@ -183,6 +215,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .header-slider__banner:last-child {
     margin-right: 0;
 }
+
 .portal-grid {
     padding-bottom: 120px;
     position: relative;
@@ -205,14 +238,11 @@ input[type="search"]::-webkit-search-results-decoration {
     margin: 0 auto;
     padding: 15px;
 }
+
 .grid-container {
     padding: 15px;
     border: 1px solid white;
     max-width: 1000px;
-}
-.center {
-    margin-left: auto;
-    margin-right: auto;
 }
 .grid-stack .grid-stack-item{
     cursor: pointer;

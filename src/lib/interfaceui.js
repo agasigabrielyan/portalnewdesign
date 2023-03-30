@@ -36,6 +36,7 @@ class InterfaceUI {
             this.portalGrid.classList.remove('portal-grid_editable');
         }
         this.changeGridStackItems();
+        this.createRemoveWidgetHandleButtons();
     }
 
     // обработка нажатия на пустом участке во время режима редактирования == закрытие режима редактирования
@@ -43,7 +44,6 @@ class InterfaceUI {
         document.addEventListener("click",(e) => {
            if( e.target.classList.contains("portal-grid_editable") ) {
                this.openCloseEditEnveronment();
-               this.changeGridStackItem();
            }
         });
     }
@@ -62,8 +62,10 @@ class InterfaceUI {
     // добавление кнопки удаления к grid-stack-item
     addRemoveGridStackItemCloser(gridStackItem) {
         if( gridStackItem.querySelector(".grid-stack-item-closer") ) {
+            debugger;
             gridStackItem.removeChild(gridStackItem.querySelector(".grid-stack-item-closer"));
         } else {
+            debugger;
             let currentGridStackCloser = document.createElement("div");
             currentGridStackCloser.classList.add("grid-stack-item-closer");
             gridStackItem.appendChild(currentGridStackCloser);
@@ -84,6 +86,29 @@ class InterfaceUI {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
+    }
+
+    // создание управляющих кнопок для виджетов
+    createRemoveWidgetHandleButtons() {
+        if( this.hat.classList.contains("hat_editable") ) {
+            let hatAddWidgetButton = document.createElement("div");
+                hatAddWidgetButton.classList.add(
+                    "hat__widget-button",
+                    "hat__add-widget"
+                );
+                hatAddWidgetButton.innerText = "+Добавить виджет";
+
+            let hatSaveWorkspace = document.createElement('div');
+                hatSaveWorkspace.classList.add(
+                    "hat__widget-button",
+                    "hat__save-workspace"
+                );
+            hatSaveWorkspace.innerText = "Сохранить";
+            (this.hat.querySelector(".hat__edit")).appendChild(hatAddWidgetButton);
+            (this.hat.querySelector(".hat__edit")).appendChild(hatSaveWorkspace);
+        } else {
+            (this.hat.querySelector(".hat__edit")).innerHTML = "";
+        }
     }
 
 }
