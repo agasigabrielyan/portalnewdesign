@@ -208,6 +208,13 @@ input[type="search"]::-webkit-search-results-decoration {
 .grid-stack-item {
     background: transparent;
 }
+.grid-stack-item_edit-mode .grid-stack-item-content {
+    border: 1px solid #0079C2;
+}
+.grid-stack-item_under-edit .grid-stack-item-content{
+    background-color: orange;
+    color: #fff;
+}
 .grid-stack-item-content {
     background-color: white;
     text-align: center;
@@ -216,10 +223,7 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: center;
     align-items: center;
     position: relative;
-}
-.grid-stack-item_under-edit .grid-stack-item-content{
-    background-color: orange;
-    color: #fff;
+    border: 1px solid transparent;
 }
 .grid-stack-item-closer {
     position: absolute;
@@ -235,7 +239,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .grid-stack-item-closer:active {
     top: -11.5px;
-    left: -11.5px;
 }
 .setup__button {
     position: relative;

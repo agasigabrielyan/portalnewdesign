@@ -27,12 +27,14 @@ window.onload = function() {
     simpleGrid.on('dragstart', function(e, ui) {
         var grid = this;
         var element = e.target;
+        element.style.cursor = "pointer";
         element.classList.add("grid-stack-item_under-edit");
     });
 
     simpleGrid.on('dragstop', function(e, ui) {
         var grid = this;
         var element = e.target;
+        element.style.cursor = "auto";
         element.classList.remove("grid-stack-item_under-edit");
     });
 

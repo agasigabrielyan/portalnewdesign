@@ -37,7 +37,15 @@ class InterfaceUI {
             currentGridStackCloser.classList.add("grid-stack-item-closer");
             gridStackItem.appendChild(currentGridStackCloser);
 
+
+            // изменение стиля текущего grid-stack-item
+            this.changeStylesOfGridStackItem(gridStackItem);
         });
+    }
+
+    // изменить стили grid-stack-item при редактировании
+    changeStylesOfGridStackItem( gridStackItem ) {
+        gridStackItem.classList.add('grid-stack-item_edit-mode');
     }
 
 }
