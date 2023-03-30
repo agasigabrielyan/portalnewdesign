@@ -225,6 +225,9 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     border: 1px solid transparent;
 }
+.grid-stack-item-content>div>div:first-child{
+    margin-bottom: 15px;
+}
 .grid-stack-item-closer {
     position: absolute;
     top: -12.5px;

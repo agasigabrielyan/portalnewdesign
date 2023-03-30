@@ -7,17 +7,18 @@ class InterfaceUI {
         this.simpleGrid = simpleGrid;
 
         this.interfaceEditButtonClickHandler();
+        this.closeEditEnvironment();
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
     interfaceEditButtonClickHandler() {
         this.workspaceEditButton.addEventListener("click", (event) => {
-            this.prepareEditEnvironment();
+            this.openCloseEditEnveronment();
         });
     }
 
-    // подготовливает среду для редактирования рабочего места
-    prepareEditEnvironment() {
+    // открытие/закрытие режима редактирования
+    openCloseEditEnveronment() {
         if( !(this.layout.classList.contains('html__editable')) ) {
             this.layout.classList.add('html__editable');
             this.portalGrid.classList.add('portal-grid_editable');
@@ -25,17 +26,27 @@ class InterfaceUI {
             this.layout.classList.remove('html__editable');
             this.portalGrid.classList.remove('portal-grid_editable');
         }
-
-        this.addGridStackItemCloser();
+        this.changeGridStackItems();
     }
 
-    // добавление кнопки удаления к grid-stack-item
-    addGridStackItemCloser() {
+    // закрытие режима реадктирования
+    closeEditEnvironment() {
+        document.addEventListener("click",(e) => {
+           if( e.target.classList.contains("portal-grid_editable") ) {
+               this.openCloseEditEnveronment();
+               this.changeGridStackItem();
+           }
+        });
+    }
+
+    // изменение grid-stack-item
+    changeGridStackItems() {
+
         let gridStackItems = this.portalGrid.querySelectorAll(".grid-stack-item ");
         gridStackItems.forEach((gridStackItem) => {
-            let currentGridStackCloser = document.createElement("div");
-            currentGridStackCloser.classList.add("grid-stack-item-closer");
-            gridStackItem.appendChild(currentGridStackCloser);
+
+            // добавление кнопки удаления текущему grid-stack-item
+            this.addRemoveGridStackItemCloser(gridStackItem);
 
 
             // изменение стиля текущего grid-stack-item
@@ -43,9 +54,25 @@ class InterfaceUI {
         });
     }
 
+    // добавление кнопки удаления к grid-stack-item
+    addRemoveGridStackItemCloser(gridStackItem) {
+        debugger;
+        if( gridStackItem.querySelector(".grid-stack-item-closer") ) {
+            gridStackItem.removeChild(gridStackItem.querySelector(".grid-stack-item-closer"));
+        } else {
+            let currentGridStackCloser = document.createElement("div");
+            currentGridStackCloser.classList.add("grid-stack-item-closer");
+            gridStackItem.appendChild(currentGridStackCloser);
+        }
+    }
+
     // изменить стили grid-stack-item при редактировании
     changeStylesOfGridStackItem( gridStackItem ) {
-        gridStackItem.classList.add('grid-stack-item_edit-mode');
+        if( !(gridStackItem.classList.contains("")) ) {
+            gridStackItem.classList.add('grid-stack-item_edit-mode');
+        } else {
+            gridStackItem.classList.remove('grid-stack-item_edit-mode');
+        }
     }
 
 }
