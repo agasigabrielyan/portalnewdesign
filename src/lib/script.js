@@ -37,7 +37,8 @@ window.onload = function() {
         var grid = this;
         var element = e.target;
         element.style.cursor = "auto";
-        element.classList.add("grid-stack-item_under-edit");
+        element.classList.remove("grid-stack-item_under-edit");
+        element.classList.add("grid-stack-item_shaking");
 
     });
 
