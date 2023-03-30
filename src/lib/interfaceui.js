@@ -22,6 +22,7 @@ class InterfaceUI {
     // открытие/закрытие режима редактирования
     openCloseEditEnveronment() {
         if( !(this.layout.classList.contains('html__editable')) ) {
+
             this.layout.classList.add('html__editable');
             this.hat.classList.add('hat_editable');
             this.footer.classList.add('footer_editable');

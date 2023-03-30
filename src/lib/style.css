@@ -36,9 +36,12 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 60px;
     font-family: Manrope, serif;
     position: relative;
+    transition: height 0.35s;
 }
 .hat_editable {
     z-index: 2;
+    height: 90px;
+    background-color: #fff;
 }
 .hat__inner {
     height: 100%;
@@ -53,6 +56,9 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
     color: #FFFFFF;
     font-size: 25px;
+}
+.hat_editable .hat__inner {
+
 }
 .header__inner {
     width: 1268px;
