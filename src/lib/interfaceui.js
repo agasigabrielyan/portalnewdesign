@@ -10,6 +10,7 @@ class InterfaceUI {
 
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
+        this.deleteWidget();
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
@@ -130,5 +131,20 @@ class InterfaceUI {
         }
 
     }
+
+    // удаление виджета из grid
+    deleteWidget() {
+        document.addEventListener("click", (event) => {
+            if( event.target.classList.contains("grid-stack-item-closer") === true ) {
+                var grid = document.getElementById("simple-grid");
+                debugger;
+                var el = event.target.parentNode;
+                debugger;
+                grid.removeWidget(el, false);
+
+            }
+        });
+    }
+
 
 }

@@ -325,15 +325,29 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .grid-stack-item-closer {
     position: absolute;
-    top: -12.5px;
-    left: -12.5px;
-    width: 50px;
-    height: 50px;
-    background-image: url('../images/grid-stack-item-closer.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 50% 50%;
+    top: -7.5px;
+    left: -7.5px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 5px #000;
+    transition: all 750ms;
+}
+.grid-stack-item-closer:before {
+    content: "";
+    width: 16px;
+    height: 4px;
+    background-color:#005FAD;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.grid-stack-item-closer:hover:before {
+    background: #F7A000;
 }
 .setup__button {
     position: relative;
