@@ -121,4 +121,9 @@ class InterfaceUI {
 
     }
 
+    // удаление виджета из simpleGrid
+    deleteWidget() {
+        alert('А теперь мы наконец удалим этот виджет!');
+    }
+
 }

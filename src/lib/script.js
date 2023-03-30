@@ -31,6 +31,16 @@ window.onload = function() {
         element.classList.add("grid-stack-item_under-edit");
         element.classList.remove("grid-stack-item_shaking");
 
+        debugger;
+
+        if( !(document.querySelector("html").classList.contains("html__editable")) ) {
+            grid.enableMove(false);
+            grid.enableResize(false);
+        } else {
+            grid.enableMove(true);
+            grid.enableResize(true);
+        }
+
     });
 
     simpleGrid.on('dragstop', function(e, ui) {
