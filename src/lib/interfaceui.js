@@ -29,7 +29,7 @@ class InterfaceUI {
         this.changeGridStackItems();
     }
 
-    // закрытие режима реадктирования
+    // обработка нажатия на пустом участке во время режима редактирования == закрытие режима редактирования
     closeEditEnvironment() {
         document.addEventListener("click",(e) => {
            if( e.target.classList.contains("portal-grid_editable") ) {
@@ -39,16 +39,12 @@ class InterfaceUI {
         });
     }
 
-    // изменение grid-stack-item
+    // изменение grid-stack-items
     changeGridStackItems() {
-
         let gridStackItems = this.portalGrid.querySelectorAll(".grid-stack-item ");
         gridStackItems.forEach((gridStackItem) => {
-
             // добавление кнопки удаления текущему grid-stack-item
             this.addRemoveGridStackItemCloser(gridStackItem);
-
-
             // изменение стиля текущего grid-stack-item
             this.changeStylesOfGridStackItem(gridStackItem);
         });
@@ -56,7 +52,6 @@ class InterfaceUI {
 
     // добавление кнопки удаления к grid-stack-item
     addRemoveGridStackItemCloser(gridStackItem) {
-        debugger;
         if( gridStackItem.querySelector(".grid-stack-item-closer") ) {
             gridStackItem.removeChild(gridStackItem.querySelector(".grid-stack-item-closer"));
         } else {
