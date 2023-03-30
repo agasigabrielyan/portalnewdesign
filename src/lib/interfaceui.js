@@ -2,6 +2,8 @@ class InterfaceUI {
 
     constructor( simpleGrid ) {
         this.layout = document.querySelector('html');
+        this.hat = document.querySelector(".hat");
+        this.footer = document.querySelector(".footer");
         this.portalGrid = document.querySelector('.portal-grid');
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
@@ -21,9 +23,13 @@ class InterfaceUI {
     openCloseEditEnveronment() {
         if( !(this.layout.classList.contains('html__editable')) ) {
             this.layout.classList.add('html__editable');
+            this.hat.classList.add('hat_editable');
+            this.footer.classList.add('footer_editable');
             this.portalGrid.classList.add('portal-grid_editable');
         } else {
             this.layout.classList.remove('html__editable');
+            this.hat.classList.remove('hat_editable');
+            this.footer.classList.remove('footer_editable')
             this.portalGrid.classList.remove('portal-grid_editable');
         }
         this.changeGridStackItems();
