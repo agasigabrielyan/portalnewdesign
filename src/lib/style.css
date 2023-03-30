@@ -123,6 +123,11 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 10px;
     padding: 10px;
 }
+.hat__widget-submenu ul li:active {
+    position: relative;
+    top: 2px;
+    left: 1px;
+}
 .hat__widget-submenu ul li:last-child {
     margin-bottom: 0;
 }
@@ -323,9 +328,6 @@ input[type="search"]::-webkit-search-results-decoration {
     background-size: 100% 100%;
     background-position: 50% 50%;
     cursor: pointer;
-}
-.grid-stack-item-closer:active {
-    top: -11.5px;
 }
 .setup__button {
     position: relative;
