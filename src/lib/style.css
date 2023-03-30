@@ -17,6 +17,68 @@ html {
     background-position: 0 0;
     /*transition: background-image 0.5s;*/
 }
+
+.delete-widget__overflow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/overflow-background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    z-index: 999;
+}
+.confirm {
+    background: #005FAD;
+    box-shadow: 0 0 10px #003F73;
+    border-radius: 5px;
+    width: 430px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+}
+
+.confirm__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.confirm__buttons {
+    display: flex;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    justify-content: center;
+}
+
+.confirm__buttons * {
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    padding: 7.5px 25px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.confirm__yes {
+    background: #22BB3B;
+}
+
+.confirm__no {
+    background: #DC003E;
+}
+
 html .ui-resizable-handle {
     display: none;
 }
