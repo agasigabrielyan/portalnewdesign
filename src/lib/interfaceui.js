@@ -62,10 +62,8 @@ class InterfaceUI {
     // добавление кнопки удаления к grid-stack-item
     addRemoveGridStackItemCloser(gridStackItem) {
         if( gridStackItem.querySelector(".grid-stack-item-closer") ) {
-            debugger;
             gridStackItem.removeChild(gridStackItem.querySelector(".grid-stack-item-closer"));
         } else {
-            debugger;
             let currentGridStackCloser = document.createElement("div");
             currentGridStackCloser.classList.add("grid-stack-item-closer");
             gridStackItem.appendChild(currentGridStackCloser);
