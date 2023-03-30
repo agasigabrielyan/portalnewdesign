@@ -12,6 +12,9 @@ html {
     background-position: 0 0;
     /*transition: background-image 0.5s;*/
 }
+html .ui-resizable-handle {
+    display: none;
+}
 .html__editable {
     background-image: url('../images/wallpaper-editable.jpg');
 }
@@ -254,6 +257,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .grid-stack-item {
     background: transparent;
 }
+.grid-stack-item_shaking {
+    animation: tilt-shaking 0.25s linear infinite;
+}
 .grid-stack-item_edit-mode .grid-stack-item-content {
     border: 1px solid #0079C2;
 }
@@ -330,4 +336,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .footer_editable {
     z-index: 2;
+}
+
+
+/** animation **/
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(0.5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-0.5deg); }
+    100% { transform: rotate(0deg); }
 }

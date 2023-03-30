@@ -1,6 +1,6 @@
 window.onload = function() {
     let simple = [
-        {x: 0, y: 0, w: 2, h: 1, content: '<div><div>1</div><div><a href="http://yandex.ru">Совместная работа</a></div></div>'},
+        {x: 0, y: 0, w: 2, h: 1, content: '<div><div>1</div><div>Совместная работа</div></div>'},
         {x: 2, y: 0, w: 1, h: 2, content: '<div><div>2</div><div>Календарь</div></div>'},
         {x: 0, y: 1, w: 2, h: 1, content: '<div><div>3</div><div>Мои услуги</div></div>'},
         {x: 0, y: 2, w: 1, h: 1, content: '<div><div>4</div><div>САД ПАО “Газпром”</div></div>'},
@@ -29,6 +29,15 @@ window.onload = function() {
         var element = e.target;
         element.style.cursor = "pointer";
         element.classList.add("grid-stack-item_under-edit");
+
+        debugger;
+        let gridStackItems = document.querySelectorAll(".grid-stack-item ");
+        for( let i=0; i<gridStackItems.length; i++) {
+            if(gridStackItems[i].innerText !== element.innerText) {
+                gridStackItems[i].classList.add("grid-stack-item_shaking");
+            }
+        }
+
     });
 
     simpleGrid.on('dragstop', function(e, ui) {
@@ -36,6 +45,12 @@ window.onload = function() {
         var element = e.target;
         element.style.cursor = "auto";
         element.classList.remove("grid-stack-item_under-edit");
+
+        let gridStackItems = document.querySelectorAll(".grid-stack-item ");
+        gridStackItems.forEach((gridStackItem) => {
+            gridStackItem.classList.remove("grid-stack-item_shaking");
+        });
+
     });
 
     simpleGrid.on("change", function(event, items) {
