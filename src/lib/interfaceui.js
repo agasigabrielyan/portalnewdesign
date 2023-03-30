@@ -4,14 +4,20 @@ class InterfaceUI {
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
 
-        this.interfaceEditButtonHandler();
+        this.interfaceEditButtonClickHandler();
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
-    interfaceEditButtonHandler() {
-        this.workspaceEditButton.addEventListener("click", () => {
-            debugger;
-        })
+    interfaceEditButtonClickHandler() {
+        this.workspaceEditButton.addEventListener("click", (event) => {
+            this.prepareEditEnvironment();
+        });
+    }
+
+    // подготовливает среду для редактирования рабочего места
+    prepareEditEnvironment() {
+        this.simpleGrid.opts.disableDrag = false;
+        this.simpleGrid.opts.disableResize = false;
     }
 
 }
