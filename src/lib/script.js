@@ -1,6 +1,6 @@
 window.onload = function() {
     let simple = [
-        {x: 0, y: 0, w: 2, h: 1, content: '<div><div>1</div><div>Совместная работа</div></div>'},
+        {x: 0, y: 0, w: 2, h: 1, content: '<div><div>1</div><div><a href="http://yandex.ru">Совместная работа</a></div></div>'},
         {x: 2, y: 0, w: 1, h: 2, content: '<div><div>2</div><div>Мои услуги</div></div>'},
         {x: 0, y: 1, w: 2, h: 1, content: '<div><div>3</div><div>Мои события</div></div>'},
         {x: 0, y: 2, w: 1, h: 1, content: '<div><div>4</div><div>САД ПАО “Газпром”</div></div>'},
