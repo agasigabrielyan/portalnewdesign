@@ -192,8 +192,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 }
 .portal-grid__inner {
-    width: 1268px;
+    width: 1300px;
     margin: 0 auto;
+    padding: 15px;
 }
 .grid-container {
     padding: 15px;
@@ -216,16 +217,25 @@ input[type="search"]::-webkit-search-results-decoration {
     align-items: center;
     position: relative;
 }
+.grid-stack-item_under-edit .grid-stack-item-content{
+    background-color: orange;
+    color: #fff;
+}
 .grid-stack-item-closer {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -12.5px;
+    left: -12.5px;
     width: 50px;
     height: 50px;
     background-image: url('../images/grid-stack-item-closer.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 50% 50%;
+    cursor: pointer;
+}
+.grid-stack-item-closer:active {
+    top: -11.5px;
+    left: -11.5px;
 }
 .setup__button {
     position: relative;

@@ -25,6 +25,19 @@ class InterfaceUI {
             this.layout.classList.remove('html__editable');
             this.portalGrid.classList.remove('portal-grid_editable');
         }
+
+        this.addGridStackItemCloser();
+    }
+
+    // добавление кнопки удаления к grid-stack-item
+    addGridStackItemCloser() {
+        let gridStackItems = this.portalGrid.querySelectorAll(".grid-stack-item ");
+        gridStackItems.forEach((gridStackItem) => {
+            let currentGridStackCloser = document.createElement("div");
+            currentGridStackCloser.classList.add("grid-stack-item-closer");
+            gridStackItem.appendChild(currentGridStackCloser);
+
+        });
     }
 
 }
