@@ -5,6 +5,11 @@ html,body {
     font-family: 'Roboto', serif;
     font-style: normal;
 }
+body *{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 html {
     background-image: url('../images/wallpaper.jpg');
     background-repeat: no-repeat;
@@ -82,6 +87,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .hat_editable .hat__inner {
 
 }
+.hat__add-widget {
+
+}
 .hat__widget-button {
     background: #005FAD;
     border-radius: 100px;
@@ -93,6 +101,30 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 23px;
     cursor: pointer;
     position: relative;
+}
+.hat__add-widget {
+    width: 280px;
+}
+.hat__widget-submenu {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #0079C2;
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.hat__widget-submenu ul li {
+    background: #005FAD;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.hat__widget-submenu ul li:last-child {
+    margin-bottom: 0;
 }
 
 .header__inner {

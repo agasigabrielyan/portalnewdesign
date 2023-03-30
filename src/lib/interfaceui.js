@@ -96,7 +96,8 @@ class InterfaceUI {
                     "hat__widget-button",
                     "hat__add-widget"
                 );
-                hatAddWidgetButton.innerText = "+Добавить виджет";
+                hatAddWidgetButton.innerHTML = "<div class='hat__widget-heading'>+ Добавить виджет</div>";
+                hatAddWidgetButton.appendChild(this.createSubmenuForWidgetButton());
 
             let hatSaveWorkspace = document.createElement('div');
                 hatSaveWorkspace.classList.add(
@@ -111,6 +112,15 @@ class InterfaceUI {
         }
     }
 
+    // создание выпадающего меню для кнопки Добавить виджет
+    createSubmenuForWidgetButton() {
+        let widgetSubMenu = document.createElement('div');
+        widgetSubMenu.classList.add("hat__widget-submenu");
+        widgetSubMenu.innerHTML = "<ul><li class='base-block'>Базовый блок</li><li class='vertical-block'>Вертикальный блок</li><li class='horizontal-block'>Горизонтальный блок</li></ul>";
+
+        return widgetSubMenu;
+    }
+
     // создание дрожания для grid-stack-item
     addShakingForGridStackItem(gridStackItem) {
         if( gridStackItem.classList.contains("grid-stack-item_shaking") ) {
@@ -119,11 +129,6 @@ class InterfaceUI {
             gridStackItem.classList.add("grid-stack-item_shaking");
         }
 
-    }
-
-    // удаление виджета из simpleGrid
-    deleteWidget() {
-        alert('А теперь мы наконец удалим этот виджет!');
     }
 
 }
