@@ -71,6 +71,12 @@ html {
     margin-right: 5px;
 }
 
+.confirm__buttons *:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
 .confirm__yes {
     background: #22BB3B;
 }

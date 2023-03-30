@@ -11,6 +11,7 @@ class InterfaceUI {
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
         this.deleteWidget();
+        this.removeConfirmOverflow();
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
@@ -136,12 +137,33 @@ class InterfaceUI {
     deleteWidget() {
         document.addEventListener("click", (event) => {
             if( event.target.classList.contains("grid-stack-item-closer") === true ) {
-                var grid = document.getElementById("simple-grid");
-                debugger;
-                var el = event.target.parentNode;
-                debugger;
-                grid.removeWidget(el, false);
+                let overflowBody = document.createElement("div");
+                    overflowBody.classList.add("delete-widget__overflow");
+                overflowBody.innerHTML = `<div class="delete-widget__confirm">
+                                                <div class="confirm">
+                                                    <div class="confirm__text">
+                                                        Вы действительно хотите удалить виджет?
+                                                    </div>
+                                                    <div class="confirm__buttons">
+                                                        <div class="confirm__yes">
+                                                            Да
+                                                        </div>
+                                                        <div class="confirm__no">
+                                                            Нет
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>`;
+                document.body.appendChild(overflowBody);
+            }
+        });
+    }
 
+    // удаление confirm overflow
+    removeConfirmOverflow() {
+        window.addEventListener("click", function(event) {
+            if( event.target.classList.contains("delete-widget__overflow") === true ) {
+                (document.querySelector(".delete-widget__overflow")).remove();
             }
         });
     }
