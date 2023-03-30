@@ -56,6 +56,8 @@ class InterfaceUI {
             this.addRemoveGridStackItemCloser(gridStackItem);
             // изменение стиля текущего grid-stack-item
             this.changeStylesOfGridStackItem(gridStackItem);
+            // добавление дрожания текущего grid-stack-item
+            this.addShakingForGridStackItem(gridStackItem);
         });
     }
 
@@ -107,6 +109,16 @@ class InterfaceUI {
         } else {
             (this.hat.querySelector(".hat__edit")).innerHTML = "";
         }
+    }
+
+    // создание дрожания для grid-stack-item
+    addShakingForGridStackItem(gridStackItem) {
+        if( gridStackItem.classList.contains("grid-stack-item_shaking") ) {
+            gridStackItem.classList.remove("grid-stack-item_shaking");
+        } else {
+            gridStackItem.classList.add("grid-stack-item_shaking");
+        }
+
     }
 
 }

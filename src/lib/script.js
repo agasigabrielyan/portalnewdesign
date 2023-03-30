@@ -29,14 +29,7 @@ window.onload = function() {
         var element = e.target;
         element.style.cursor = "pointer";
         element.classList.add("grid-stack-item_under-edit");
-
-        debugger;
-        let gridStackItems = document.querySelectorAll(".grid-stack-item ");
-        for( let i=0; i<gridStackItems.length; i++) {
-            if(gridStackItems[i].innerText !== element.innerText) {
-                gridStackItems[i].classList.add("grid-stack-item_shaking");
-            }
-        }
+        element.classList.remove("grid-stack-item_shaking");
 
     });
 
@@ -44,12 +37,7 @@ window.onload = function() {
         var grid = this;
         var element = e.target;
         element.style.cursor = "auto";
-        element.classList.remove("grid-stack-item_under-edit");
-
-        let gridStackItems = document.querySelectorAll(".grid-stack-item ");
-        gridStackItems.forEach((gridStackItem) => {
-            gridStackItem.classList.remove("grid-stack-item_shaking");
-        });
+        element.classList.add("grid-stack-item_under-edit");
 
     });
 
