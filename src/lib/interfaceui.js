@@ -26,6 +26,8 @@ class InterfaceUI {
             this.hat.classList.add('hat_editable');
             this.footer.classList.add('footer_editable');
             this.portalGrid.classList.add('portal-grid_editable');
+
+            this.scrollUp();
         } else {
             this.layout.classList.remove('html__editable');
             this.hat.classList.remove('hat_editable');
@@ -74,6 +76,13 @@ class InterfaceUI {
         } else {
             gridStackItem.classList.remove('grid-stack-item_edit-mode');
         }
+    }
+
+    // scroll вверх
+    scrollUp() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
     }
 
 }
