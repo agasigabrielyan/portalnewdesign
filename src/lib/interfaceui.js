@@ -12,6 +12,7 @@ class InterfaceUI {
         this.closeEditEnvironment();
         this.deleteWidget();
         this.removeConfirmOverflow();
+        this.addWindgetHandler();
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
@@ -118,7 +119,7 @@ class InterfaceUI {
     createSubmenuForWidgetButton() {
         let widgetSubMenu = document.createElement('div');
         widgetSubMenu.classList.add("hat__widget-submenu");
-        widgetSubMenu.innerHTML = "<ul><li class='base-block'>Базовый блок</li><li class='vertical-block'>Вертикальный блок</li><li class='horizontal-block'>Горизонтальный блок</li></ul>";
+        widgetSubMenu.innerHTML = "<ul><li class='base-block' onclick='addWindgetHandler()'>Базовый блок</li><li class='vertical-block'>Вертикальный блок</li><li class='horizontal-block'>Горизонтальный блок</li></ul>";
 
         return widgetSubMenu;
     }
@@ -174,4 +175,8 @@ class InterfaceUI {
         });
     }
 
+    // добавление виджета
+    addWindgetHandler() {
+        this.simpleGrid.addWidget({w: Math.floor(1 + 3 * Math.random()), h: Math.floor(1 + 3 * Math.random())});
+    }
 }
