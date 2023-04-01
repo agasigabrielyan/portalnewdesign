@@ -124,11 +124,18 @@ class InterfaceUI {
     }
 
     // создание дрожания для grid-stack-item
-    addShakingForGridStackItem(gridStackItem) {
-        if( gridStackItem.classList.contains("grid-stack-item_shaking") ) {
+    addShakingForGridStackItem(gridStackItem, index) {
+        debugger;
+        if( gridStackItem.classList.contains("grid-stack-item_shaking") || gridStackItem.classList.contains("grid-stack-item_shaking-opposite") ) {
+
             gridStackItem.classList.remove("grid-stack-item_shaking");
+            gridStackItem.classList.remove("grid-stack-item_shaking-opposite");
         } else {
-            gridStackItem.classList.add("grid-stack-item_shaking");
+            if(index%2 === 0) {
+                gridStackItem.classList.add("grid-stack-item_shaking");
+            } else {
+                gridStackItem.classList.add("grid-stack-item_shaking-opposite");
+            }
         }
 
     }
@@ -167,6 +174,5 @@ class InterfaceUI {
             }
         });
     }
-
 
 }

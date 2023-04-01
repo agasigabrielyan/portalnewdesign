@@ -30,9 +30,7 @@ window.onload = function() {
         element.style.cursor = "pointer";
         element.classList.add("grid-stack-item_under-edit");
         element.classList.remove("grid-stack-item_shaking");
-
-        simpleGrid
-
+        element.classList.remove("grid-stack-item_shaking-opposite");
     });
 
     simpleGrid.on('dragstop', function(e, ui) {
