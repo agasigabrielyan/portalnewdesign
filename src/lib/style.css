@@ -363,10 +363,10 @@ input[type="search"]::-webkit-search-results-decoration {
     background: transparent;
 }
 .grid-stack-item_shaking {
-    animation: tilt-shaking 0.35s linear infinite;
+    animation: tilt-shaking 0.5s linear infinite;
 }
 .grid-stack-item_shaking-opposite {
-    animation: tilt-shaking-opposite 0.35s linear infinite;
+    animation: tilt-shaking-opposite 0.5s linear infinite;
 }
 .grid-stack-item_edit-mode .grid-stack-item-content {
     border: 1px solid #0079C2;
@@ -461,15 +461,15 @@ input[type="search"]::-webkit-search-results-decoration {
 /** animation **/
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(0.4deg); }
+    25% { transform: rotate(0.35deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(-0.4deg); }
+    75% { transform: rotate(-0.35deg); }
     100% { transform: rotate(0deg); }
 }
 @keyframes tilt-shaking-opposite {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(-0.4deg); }
+    25% { transform: rotate(-0.35deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(0.4deg); }
+    75% { transform: rotate(0.35deg); }
     100% { transform: rotate(0deg); }
 }

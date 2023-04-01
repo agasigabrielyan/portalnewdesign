@@ -124,14 +124,13 @@ class InterfaceUI {
     }
 
     // создание дрожания для grid-stack-item
-    addShakingForGridStackItem(gridStackItem, index) {
-        debugger;
+    addShakingForGridStackItem(gridStackItem) {
         if( gridStackItem.classList.contains("grid-stack-item_shaking") || gridStackItem.classList.contains("grid-stack-item_shaking-opposite") ) {
 
             gridStackItem.classList.remove("grid-stack-item_shaking");
             gridStackItem.classList.remove("grid-stack-item_shaking-opposite");
         } else {
-            if(index%2 === 0) {
+            if( (gridStackItem.innerText.length)%2 === 0) {
                 gridStackItem.classList.add("grid-stack-item_shaking");
             } else {
                 gridStackItem.classList.add("grid-stack-item_shaking-opposite");
