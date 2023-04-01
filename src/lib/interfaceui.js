@@ -12,7 +12,12 @@ class InterfaceUI {
         this.closeEditEnvironment();
         this.deleteWidget();
         this.removeConfirmOverflow();
-        this.addWindgetHandler();
+
+        document.addEventListener("click", (e) => {
+            if(e.target.classList.contains('something')) {
+                this.addGridItem(this.simpleGrid);
+            }
+        });
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
@@ -175,8 +180,9 @@ class InterfaceUI {
         });
     }
 
-    // добавление виджета
-    addWindgetHandler() {
-        this.simpleGrid.addWidget({w: Math.floor(1 + 3 * Math.random()), h: Math.floor(1 + 3 * Math.random())});
+    // добавление нового виджета
+    addGridItem(simpleGrid) {
+        simpleGrid.addWidget({w: Math.floor(1 + 3 * Math.random()), h: Math.floor(1 + 3 * Math.random())});
     }
+
 }

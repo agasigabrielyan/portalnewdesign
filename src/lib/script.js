@@ -47,7 +47,6 @@ window.onload = function() {
         console.log('Собираемся чего то поменять');
     });
 
-
     // инициализация интерфейса
-    let interfaceUiObj = new InterfaceUI();
+    let interfaceUiObj = new InterfaceUI(simpleGrid);
 }
