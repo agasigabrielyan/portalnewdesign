@@ -171,7 +171,6 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 20px;
     line-height: 23px;
     cursor: pointer;
-    position: relative;
 }
 .hat__add-widget {
     width: 280px;
@@ -179,15 +178,16 @@ input[type="search"]::-webkit-search-results-decoration {
 .hat__widget-submenu {
     position: absolute;
     top: 66px;
-    left: 0;
+    left: 50%;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #0079C2;
     border-bottom-left-radius: 20px;
-    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom-right-radius: 20px;
+    width: 90%;
+    transform: translateX(-50%);
 }
 .hat__widget-submenu ul li {
     background: #005FAD;
