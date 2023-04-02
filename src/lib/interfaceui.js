@@ -15,8 +15,8 @@ class InterfaceUI {
         this.removeConfirmOverflow();
 
         document.addEventListener("click", (e) => {
-            if(e.target.classList.contains('something')) {
-                this.addGridItem(this.simpleGrid);
+            if(e.target.classList.contains('base-block')) {
+                this.addGridItem(this.simpleGrid, e.target.innerText);
             }
         });
     }
@@ -146,10 +146,10 @@ class InterfaceUI {
         widgetSubMenu.classList.add("hat__widget-submenu");
 
         let widgetListItems = [
-            'Карта пробок',
+            'Погода',
             'Часы',
             'Библиотека',
-            'VK-чат',
+            'Чат',
             'Заменить картридж'
         ];
 
@@ -219,8 +219,20 @@ class InterfaceUI {
     }
 
     // добавление нового виджета
-    addGridItem(simpleGrid) {
-        simpleGrid.addWidget({w: Math.floor(1 + 3 * Math.random()), h: Math.floor(1 + 3 * Math.random())});
+    addGridItem(simpleGrid, info) {
+        let gridStackItem =  this.simpleGrid.addWidget({
+                                    x: 0,
+                                    y: 0,
+                                    w: 1,
+                                    h: 1,
+                                    content: '<div><div>' + (simpleGrid.engine.nodes.length+1) + '</div><div>' + info + '</div></div>'
+                                });
+        // добавление кнопки удаления текущему grid-stack-item
+        this.addRemoveGridStackItemCloser(gridStackItem);
+        // изменение стиля текущего grid-stack-item
+        this.changeStylesOfGridStackItem(gridStackItem);
+        // добавление дрожания текущего grid-stack-item
+        this.addShakingForGridStackItem(gridStackItem);
     }
 
 }

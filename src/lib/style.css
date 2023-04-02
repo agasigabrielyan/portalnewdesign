@@ -24,11 +24,12 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/overflow-background.png');
+    /*background-image: url('../images/overflow-background.png');*/
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50%;
     z-index: 999;
+    background-color: rgba(204,204,204,.5);
 }
 .confirm {
     background: #005FAD;
@@ -179,16 +180,15 @@ input[type="search"]::-webkit-search-results-decoration {
     position: absolute;
     top: 66px;
     left: 50%;
-    padding: 20px;
     border: 1px solid #0079C2;
     border-top: 0;
     border-bottom-left-radius: 20px;
     padding-top: 30px;
-    padding-bottom: 30px;
     border-bottom-right-radius: 20px;
     width: 80%;
     transform: translateX(-50%);
     background-color: #F6F6F6;
+    overflow: hidden;
 }
 .hat__widget-submenu ul {
     display: flex;
@@ -207,13 +207,13 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: center;
     margin-right: 15px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px #a3a3a3;
+    box-shadow: 12px 12px 18px #a3a3a3;
 }
 .hat__widget-submenu ul li:nth-child(even) {
-    animation: tilt-shaking 0.6s linear infinite;
+    animation: tilt-shaking 0.3s linear infinite;
 }
 .hat__widget-submenu ul li:nth-child(odd) {
-    animation: tilt-shaking-opposite 0.6s linear infinite;
+    animation: tilt-shaking-opposite 0.3s linear infinite;
 }
 .hat__widget-submenu ul li:hover {
     animation: tilt-n-move-shaking 0.3s linear infinite;
@@ -229,6 +229,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .widget-search {
     width: 100%;
     border-top: 1px solid #ccc;
+    background-color: #EBEBEB;
+    padding-bottom: 30px;
 }
 .widget-search input {
     width: 90%;
