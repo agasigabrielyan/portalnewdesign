@@ -144,7 +144,7 @@ class InterfaceUI {
     createSubmenuForWidgetButton() {
         let widgetSubMenu = document.createElement('div');
         widgetSubMenu.classList.add("hat__widget-submenu");
-        widgetSubMenu.innerHTML = "<ul><li class='base-block' onclick='addWindgetHandler()'>Базовый блок</li><li class='vertical-block'>Вертикальный блок</li><li class='horizontal-block'>Горизонтальный блок</li></ul>";
+        widgetSubMenu.innerHTML = "<ul><li class='base-block' onclick='addWindgetHandler()'>Карта пробок</li><li class='vertical-block'>Часы</li><li class='vertical-block'>Библиотека</li><li class='vertical-block'>VK-чат</li><li class='horizontal-block'>Заменить <br/> картридж</li></ul>";
 
         return widgetSubMenu;
     }
