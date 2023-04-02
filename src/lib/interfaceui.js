@@ -173,11 +173,12 @@ class InterfaceUI {
 
     // удаление confirm overflow
     removeConfirmOverflow() {
-        window.addEventListener("click", function(event) {
+        
+        /*window.addEventListener("click", function(event) {
             if( event.target.classList.contains("delete-widget__overflow") === true ) {
                 (document.querySelector(".delete-widget__overflow")).remove();
             }
-        });
+        });*/
     }
 
     // добавление нового виджета
