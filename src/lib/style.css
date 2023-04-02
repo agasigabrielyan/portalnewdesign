@@ -217,6 +217,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat__widget-submenu ul li:hover {
     animation: tilt-n-move-shaking 0.3s linear infinite;
+    box-shadow: 12px 12px 15px #a3a3a3;
 }
 .hat__widget-submenu ul li:active {
     position: relative;
