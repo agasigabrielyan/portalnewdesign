@@ -178,15 +178,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat__widget-submenu {
     position: absolute;
-    top: 68px;
+    top: 66px;
     left: 0;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #0079C2;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
+    border-bottom-right-radius: 20px;
 }
 .hat__widget-submenu ul li {
     background: #005FAD;
