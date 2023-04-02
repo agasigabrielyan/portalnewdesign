@@ -186,7 +186,7 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom-right-radius: 20px;
-    width: 90%;
+    width: 80%;
     transform: translateX(-50%);
     background-color: #F6F6F6;
 }
@@ -208,6 +208,15 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 15px;
     box-sizing: border-box;
     box-shadow: 0 0 10px #a3a3a3;
+}
+.hat__widget-submenu ul li:nth-child(even) {
+    animation: tilt-shaking 0.6s linear infinite;
+}
+.hat__widget-submenu ul li:nth-child(odd) {
+    animation: tilt-shaking-opposite 0.6s linear infinite;
+}
+.hat__widget-submenu ul li:hover {
+    animation: tilt-n-move-shaking 0.3s linear infinite;
 }
 .hat__widget-submenu ul li:active {
     position: relative;
@@ -490,4 +499,29 @@ input[type="search"]::-webkit-search-results-decoration {
     50% { transform: rotate(0deg); }
     75% { transform: rotate(0.35deg); }
     100% { transform: rotate(0deg); }
+}
+
+/** widget shaking animation **/
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(0.5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-0.5deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes tilt-shaking-opposite {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-0.5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(0.5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/** hovered widget **/
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
 }
