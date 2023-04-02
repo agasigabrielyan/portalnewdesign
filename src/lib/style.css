@@ -85,6 +85,9 @@ html .ui-resizable-handle {
 .html__editable {
     background-image: url('../images/wallpaper-editable.jpg');
 }
+.hat__editable {
+    filter: blur(0);
+}
 .ui-resizable-se {
     display: none!important;
 }
@@ -363,10 +366,10 @@ input[type="search"]::-webkit-search-results-decoration {
     background: transparent;
 }
 .grid-stack-item_shaking {
-    animation: tilt-shaking 0.5s linear infinite;
+    animation: tilt-shaking 0.6s linear infinite;
 }
 .grid-stack-item_shaking-opposite {
-    animation: tilt-shaking-opposite 0.5s linear infinite;
+    animation: tilt-shaking-opposite 0.6s linear infinite;
 }
 .grid-stack-item_edit-mode .grid-stack-item-content {
     border: 1px solid #0079C2;

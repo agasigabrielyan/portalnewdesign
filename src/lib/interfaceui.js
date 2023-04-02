@@ -7,6 +7,7 @@ class InterfaceUI {
         this.portalGrid = document.querySelector('.portal-grid');
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
+        this.elementsNotToBeBlured = ['hat', 'portal-grid', 'footer'];
 
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
@@ -45,6 +46,7 @@ class InterfaceUI {
         }
         this.changeGridStackItems();
         this.createRemoveWidgetHandleButtons();
+        this.blurUnblurElements();
     }
 
     // обработка нажатия на пустом участке во время режима редактирования == закрытие режима редактирования
@@ -54,6 +56,24 @@ class InterfaceUI {
                this.openCloseEditEnveronment();
            }
         });
+    }
+
+    // заблюрить все элементы, кроме нужных
+    blurUnblurElements() {
+        let allFirstChildElements = (document.querySelector('body')).children;
+        if( !(this.layout.classList.contains('html__editable')) ) {
+            for( let i=0; i<allFirstChildElements.length; i++ ) {
+                allFirstChildElements[i].style.filter = "none";
+            }
+
+        } else {
+            for( let i=0; i<allFirstChildElements.length; i++ ) {
+                let classListArray = allFirstChildElements[i].classList;
+                if( !(this.elementsNotToBeBlured.includes(classListArray[0])) ) {
+                    allFirstChildElements[i].style.filter = "blur(5px)";
+                }
+            }
+        }
     }
 
     // изменение grid-stack-items
