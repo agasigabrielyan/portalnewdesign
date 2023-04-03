@@ -235,6 +235,8 @@ class InterfaceUI {
         this.addRemoveShakingForGridStackItem(gridStackItem);
 
         this.updatedObjectOfElements( gridStackItem, 'add' );
+
+        event.target.remove();
     }
 
 
