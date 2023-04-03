@@ -16,8 +16,8 @@ window.onload = function() {
         column: 3,
         cellHeight: 260,
         disableOneColumnMode: true,
-        disableDrag: false,
-        disableResize: false,
+        disableDrag: true,
+        disableResize: true,
         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
         margin: 10,
     }, '#simple-grid');
@@ -44,7 +44,7 @@ window.onload = function() {
     });
 
     simpleGrid.on("change", function(event, items) {
-        console.log('Собираемся чего то поменять');
+        debugger;
     });
 
     // инициализация интерфейса

@@ -38,6 +38,8 @@ class InterfaceUI {
             this.portalGrid.classList.add('portal-grid_editable');
 
             this.scrollUp();
+            this.simpleGrid.enable();
+
         } else {
             this.layout.classList.remove('html__editable');
             this.hat.classList.remove('hat_editable');
@@ -221,12 +223,12 @@ class InterfaceUI {
     // добавление нового виджета
     addGridItem(simpleGrid, info) {
         let gridStackItem =  this.simpleGrid.addWidget({
-                                    x: 0,
-                                    y: 0,
-                                    w: 1,
-                                    h: 1,
-                                    content: '<div><div>' + (simpleGrid.engine.nodes.length+1) + '</div><div>' + info + '</div></div>'
-                                });
+            x: 0,
+            y: 0,
+            w: 1,
+            h: 1,
+            content: '<div><div>' + (simpleGrid.engine.nodes.length+1) + '</div><div>' + info + '</div></div>'
+        });
         // добавление кнопки удаления текущему grid-stack-item
         this.addRemoveGridStackItemCloser(gridStackItem);
         // изменение стиля текущего grid-stack-item
