@@ -45,6 +45,8 @@ class InterfaceUI {
             this.hat.classList.remove('hat_editable');
             this.footer.classList.remove('footer_editable')
             this.portalGrid.classList.remove('portal-grid_editable');
+
+            this.simpleGrid.disable();
         }
         this.changeGridStackItems();
         this.createRemoveWidgetHandleButtons();
