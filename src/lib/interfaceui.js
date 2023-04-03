@@ -85,7 +85,7 @@ class InterfaceUI {
             // изменение стиля текущего grid-stack-item
             this.changeStylesOfGridStackItem(gridStackItem);
             // добавление дрожания текущего grid-stack-item
-            this.addShakingForGridStackItem(gridStackItem);
+            this.addRemoveShakingForGridStackItem(gridStackItem);
         });
     }
 
@@ -167,7 +167,7 @@ class InterfaceUI {
     }
 
     // создание дрожания для grid-stack-item
-    addShakingForGridStackItem(gridStackItem) {
+    addRemoveShakingForGridStackItem(gridStackItem) {
         if( gridStackItem.classList.contains("grid-stack-item_shaking") || gridStackItem.classList.contains("grid-stack-item_shaking-opposite") ) {
 
             gridStackItem.classList.remove("grid-stack-item_shaking");
@@ -232,7 +232,19 @@ class InterfaceUI {
         // изменение стиля текущего grid-stack-item
         this.changeStylesOfGridStackItem(gridStackItem);
         // добавление дрожания текущего grid-stack-item
-        this.addShakingForGridStackItem(gridStackItem);
+        this.addRemoveShakingForGridStackItem(gridStackItem);
+
+        this.updatedObjectOfElements( gridStackItem, 'add' );
+    }
+
+
+    // обновление объекта элементов
+    updatedObjectOfElements( itemAddedRemoved, action ) {
+        if( action === 'add' ) {
+            debugger;
+        } else if( action === 'remove' ) {
+            alert('Собираемся удалить элемент из списка');
+        }
     }
 
 }
