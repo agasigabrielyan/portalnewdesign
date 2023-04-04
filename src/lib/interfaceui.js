@@ -158,7 +158,7 @@ class InterfaceUI {
 
         let widgetListItemsHtml = "<ul>";
             this.widgetItems.forEach((litem)=>{
-                let litemHmlt = "<li class='base-block'>" + litem + "</li>";
+                let litemHmlt = this.createSubmenuSingleItem(litem);
                 widgetListItemsHtml += litemHmlt;
             });
         widgetListItemsHtml += '</ul>';
@@ -167,6 +167,17 @@ class InterfaceUI {
         widgetSubMenu.innerHTML = widgetListItemsHtml;
 
         return widgetSubMenu;
+    }
+
+    createSubmenuSingleItem(litem) {
+        let litemHtml = "";
+
+            litemHtml += `<div class='base-block__wrapper'>
+                            <li class='base-block'>${litem}</li>
+                            <div class='base-block__description'><span>${litem}</span></div>
+                          </div>`;
+
+        return litemHtml;
     }
 
     // создание дрожания для grid-stack-item

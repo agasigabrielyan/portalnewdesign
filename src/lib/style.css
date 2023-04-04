@@ -188,7 +188,6 @@ input[type="search"]::-webkit-search-results-decoration {
     transform: translateX(-50%);
     background-color: #F6F6F6;
     overflow: hidden;
-    padding-top: 60px;
 }
 .hat__widget-submenu ul {
     display: flex;
@@ -227,10 +226,33 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 2px;
     left: 1px;
 }
+.base-block__wrapper {
+    position: relative;
+}
+.base-block__description {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #005FAD;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.base-block__description span {
+    display: inline-block;
+    width: 82px;
+    margin: 0 auto;
+}
 .widget-search {
     width: 100%;
     border-top: 1px solid #ccc;
-    background-color: #EBEBEB;
+    background-color: #ECEBEB;
     padding-bottom: 30px;
     position: relative;
 }
