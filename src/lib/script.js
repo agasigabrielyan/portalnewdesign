@@ -34,7 +34,6 @@ window.onload = function() {
         element.classList.add("grid-stack-item_under-edit");
         element.classList.remove("grid-stack-item_shaking");
         element.classList.remove("grid-stack-item_shaking-opposite");
-        debugger;
     });
 
     simpleGrid.on('dragstop', function(e, ui) {

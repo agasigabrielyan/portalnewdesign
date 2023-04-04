@@ -259,7 +259,9 @@ class InterfaceUI {
     removeConfirmOverflow() {
         window.addEventListener("click", function(event) {
             if( event.target.classList.contains("confirm__no") === true || event.target.classList.contains("confirm__yes") === true) {
-                document.querySelector(".delete-widget__overflow").remove();
+                if( document.querySelector(".delete-widget__overflow") !== 'undefined' ) {
+                    document.querySelector(".delete-widget__overflow").remove();
+                }
             }
         });
     }
