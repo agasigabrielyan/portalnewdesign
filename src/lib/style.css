@@ -161,6 +161,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .hat_editable .hat__inner {
 
 }
+.hat__widget-heading {
+    padding-right: 5px;
+}
 .hat__add-widget {
 
 }
