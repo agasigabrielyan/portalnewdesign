@@ -23,6 +23,7 @@ class InterfaceUI {
         this.deleteWidget();
         this.removeConfirmOverflow();
         this.showSubmenuByAddWidgetButton();
+        this.removeWidget();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
@@ -128,6 +129,17 @@ class InterfaceUI {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
+        setTimeout(
+            this.openWidgetMenuWithTimeout,
+            1000
+        )
+    }
+
+    openWidgetMenuWithTimeout() {
+        if( document.querySelector('body').scrollTop === 0 ) {
+            let hatWidgetHeading = document.querySelector('.hat__widget-heading');
+            hatWidgetHeading.click();
+        }
     }
 
     // создание управляющих кнопок для виджетов
@@ -242,12 +254,11 @@ class InterfaceUI {
 
     // удаление confirm overflow
     removeConfirmOverflow() {
-        
-        /*window.addEventListener("click", function(event) {
-            if( event.target.classList.contains("delete-widget__overflow") === true ) {
-                (document.querySelector(".delete-widget__overflow")).remove();
+        window.addEventListener("click", function(event) {
+            if( event.target.classList.contains("confirm__no") === true ) {
+                document.querySelector(".delete-widget__overflow").remove();
             }
-        });*/
+        });
     }
 
     // добавление нового виджета
@@ -276,6 +287,15 @@ class InterfaceUI {
         } else if( action === 'remove' ) {
             alert('Собираемся удалить элемент из списка');
         }
+    }
+
+    // удаление виджета
+    removeWidget(gridstackItem) {
+        window.addEventListener('click', (e) => {
+            if( e.target.classList.contains('confirm__yes') ) {
+                alert('А теперь нам надо понять как мы будем удалять наш gridstack');
+            }
+        })
     }
 
 }
