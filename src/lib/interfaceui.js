@@ -20,6 +20,7 @@ class InterfaceUI {
         this.closeEditEnvironment();
         this.deleteWidget();
         this.removeConfirmOverflow();
+        this.showSubmenuByAddWidgetButton();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
@@ -180,6 +181,20 @@ class InterfaceUI {
         return litemHtml;
     }
 
+    showSubmenuByAddWidgetButton() {
+        window.addEventListener('click', (e) => {
+            if( e.target.classList.contains('hat__widget-heading') ) {
+                if( document.querySelector('.hat__widget-submenu').style.top === "66px" ) {
+                    document.querySelector('.hat__widget-submenu').style.top = "-3000px";
+                    e.target.innerText = '+ Добавить виджет';
+                } else {
+                    e.target.innerText = 'Скрыть виджеты';
+                    document.querySelector('.hat__widget-submenu').style.top = "66px";
+                }
+            }
+        });
+    }
+
     // создание дрожания для grid-stack-item
     addRemoveShakingForGridStackItem(gridStackItem) {
         if( gridStackItem.classList.contains("grid-stack-item_shaking") || gridStackItem.classList.contains("grid-stack-item_shaking-opposite") ) {
@@ -255,7 +270,6 @@ class InterfaceUI {
     // обновление объекта элементов
     updatedObjectOfElements( itemAddedRemoved, action ) {
         if( action === 'add' ) {
-            debugger;
         } else if( action === 'remove' ) {
             alert('Собираемся удалить элемент из списка');
         }
