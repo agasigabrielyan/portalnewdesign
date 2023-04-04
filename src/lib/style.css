@@ -201,7 +201,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .hat__widget-submenu ul {
     display: flex;
     align-items: center;
-    margin-top: 45px;
     margin-bottom: 45px;
     flex-wrap: wrap;
     padding: 15px 40px;

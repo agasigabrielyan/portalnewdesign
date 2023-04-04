@@ -15,6 +15,8 @@ class InterfaceUI {
             'Чат',
             'Заменить картридж',
         ];
+        this.menuOutPosition = "90px";
+        this.menuInPosition = "-3000px";
 
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
@@ -184,12 +186,12 @@ class InterfaceUI {
     showSubmenuByAddWidgetButton() {
         window.addEventListener('click', (e) => {
             if( e.target.classList.contains('hat__widget-heading') ) {
-                if( document.querySelector('.hat__widget-submenu').style.top === "66px" ) {
-                    document.querySelector('.hat__widget-submenu').style.top = "-3000px";
+                if( document.querySelector('.hat__widget-submenu').style.top === this.menuOutPosition ) {
+                    document.querySelector('.hat__widget-submenu').style.top = this.menuInPosition;
                     e.target.innerText = '+ Добавить виджет';
                 } else {
                     e.target.innerText = 'Скрыть виджеты';
-                    document.querySelector('.hat__widget-submenu').style.top = "66px";
+                    document.querySelector('.hat__widget-submenu').style.top = this.menuOutPosition;
                 }
             }
         });
