@@ -293,7 +293,7 @@ class InterfaceUI {
     removeWidget(gridstackItem) {
         window.addEventListener('click', (e) => {
             if( e.target.classList.contains('confirm__yes') ) {
-                alert('А теперь нам надо понять как мы будем удалять наш gridstack');
+                
             }
         })
     }
