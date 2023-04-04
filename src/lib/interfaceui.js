@@ -23,7 +23,6 @@ class InterfaceUI {
         this.deleteWidget();
         this.removeConfirmOverflow();
         this.showSubmenuByAddWidgetButton();
-        this.removeWidget();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
