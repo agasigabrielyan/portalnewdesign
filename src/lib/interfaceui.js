@@ -273,7 +273,7 @@ class InterfaceUI {
             y: 0,
             w: 1,
             h: 1,
-            content: '<div><div>' + (simpleGrid.engine.nodes.length+1) + '</div><div>' + info + '</div></div>'
+            content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div></div><div>${info}</div></div>`
         });
         // добавление кнопки удаления текущему grid-stack-item
         this.addRemoveGridStackItemCloser(gridStackItem);
