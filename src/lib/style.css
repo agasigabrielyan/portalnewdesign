@@ -215,10 +215,10 @@ input[type="search"]::-webkit-search-results-decoration {
     animation: tilt-shaking 0.3s linear infinite;
 }
 .hat__widget-submenu ul li:nth-child(odd) {
-    animation: tilt-shaking-opposite 0.3s linear infinite;
+    animation: tilt-shaking-opposite 0.4s linear infinite;
 }
 .hat__widget-submenu ul li:hover {
-    animation: tilt-n-move-shaking 0.3s linear infinite;
+    animation: tilt-n-move-shaking 0.4s linear infinite;
     box-shadow: 12px 12px 15px #a3a3a3;
 }
 .hat__widget-submenu ul li:active {
@@ -578,8 +578,8 @@ input[type="search"]::-webkit-search-results-decoration {
 /** hovered widget **/
 @keyframes tilt-n-move-shaking {
     0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(5px, 5px) rotate(5deg); }
+    25% { transform: translate(2.5px, 2.5px) rotate(2.5deg); }
     50% { transform: translate(0, 0) rotate(0deg); }
-    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    75% { transform: translate(-2.5px, 2.5px) rotate(-2.5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
