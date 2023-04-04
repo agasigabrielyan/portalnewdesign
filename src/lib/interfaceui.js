@@ -232,21 +232,21 @@ class InterfaceUI {
             if( event.target.classList.contains("grid-stack-item-closer") === true ) {
                 let overflowBody = document.createElement("div");
                     overflowBody.classList.add("delete-widget__overflow");
-                overflowBody.innerHTML = `<div class="delete-widget__confirm">
-                                                <div class="confirm">
-                                                    <div class="confirm__text">
-                                                        Вы действительно хотите удалить виджет?
-                                                    </div>
-                                                    <div class="confirm__buttons">
-                                                        <div class="confirm__yes">
-                                                            Да
+                    overflowBody.innerHTML = `<div class="delete-widget__confirm">
+                                                    <div class="confirm">
+                                                        <div class="confirm__text">
+                                                            Вы действительно хотите удалить виджет?
                                                         </div>
-                                                        <div class="confirm__no">
-                                                            Нет
+                                                        <div class="confirm__buttons">
+                                                            <div class="confirm__yes">
+                                                                Да
+                                                            </div>
+                                                            <div class="confirm__no">
+                                                                Нет
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>`;
+                                                </div>`;
                 document.body.appendChild(overflowBody);
             }
         });
@@ -291,11 +291,7 @@ class InterfaceUI {
 
     // удаление виджета
     removeWidget(gridstackItem) {
-        window.addEventListener('click', (e) => {
-            if( e.target.classList.contains('confirm__yes') ) {
-                
-            }
-        })
+        debugger;
     }
 
 }
