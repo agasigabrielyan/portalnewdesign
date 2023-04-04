@@ -23,7 +23,7 @@ class InterfaceUI {
         this.deleteWidget();
         this.removeConfirmOverflow();
         this.showSubmenuByAddWidgetButton();
-        this.removeWidget();
+        this.removeWidgets();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
@@ -295,7 +295,7 @@ class InterfaceUI {
     }
 
     // удаление виджета
-    removeWidget() {
+    removeWidgets() {
         document.addEventListener('click', (e) => {
             if(e.target.classList.contains('confirm__yes')) {
                 let cellToBeDeleted = document.getElementById(e.target.dataset.customid);
