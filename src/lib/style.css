@@ -184,9 +184,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat__widget-submenu {
     position: absolute;
-    /*top: 66px;*/
-    top: -600px;
     left: 50%;
+    top: -3000px;
     border: 1px solid #0079C2;
     border-top: 0;
     border-bottom-left-radius: 20px;
@@ -197,6 +196,8 @@ input[type="search"]::-webkit-search-results-decoration {
     overflow: hidden;
     transition: top 250ms;
     z-index: -1;
+    background-image: url('../images/submenu-wallpaper.png');
+    padding-top: 60px;
 }
 .hat__widget-submenu ul {
     display: flex;

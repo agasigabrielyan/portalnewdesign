@@ -172,6 +172,7 @@ class InterfaceUI {
         return widgetSubMenu;
     }
 
+    // создание одного элемента
     createSubmenuSingleItem(litem) {
         let litemHtml = "";
 
