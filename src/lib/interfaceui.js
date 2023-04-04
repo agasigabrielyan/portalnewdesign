@@ -23,6 +23,7 @@ class InterfaceUI {
         this.deleteWidget();
         this.removeConfirmOverflow();
         this.showSubmenuByAddWidgetButton();
+        this.removeWidget();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
@@ -229,6 +230,9 @@ class InterfaceUI {
     deleteWidget() {
         document.addEventListener("click", (event) => {
             if( event.target.classList.contains("grid-stack-item-closer") === true ) {
+
+                let gridStackItemToBeDeletedId = event.target.parentNode.querySelector(".gridstack-main-class").getAttribute('id');
+
                 let overflowBody = document.createElement("div");
                     overflowBody.classList.add("delete-widget__overflow");
                     overflowBody.innerHTML = `<div class="delete-widget__confirm">
@@ -237,7 +241,7 @@ class InterfaceUI {
                                                             Вы действительно хотите удалить виджет?
                                                         </div>
                                                         <div class="confirm__buttons">
-                                                            <div class="confirm__yes">
+                                                            <div class="confirm__yes" data-customid=${gridStackItemToBeDeletedId}>
                                                                 Да
                                                             </div>
                                                             <div class="confirm__no">
@@ -289,8 +293,18 @@ class InterfaceUI {
     }
 
     // удаление виджета
-    removeWidget(gridstackItem) {
-        debugger;
+    removeWidget() {
+        document.addEventListener('click', (e) => {
+            if(e.target.classList.contains('confirm__yes')) {
+                let cellToBeDeleted = document.getElementById(e.target.dataset.customid);
+                let gridStackItemToBeDeleted = cellToBeDeleted.parentNode.parentNode;
+                this.removeDefinedWidget(gridStackItemToBeDeleted);
+            }
+        })
+    }
+
+    removeDefinedWidget(gridStackItemToBeDeleted) {
+        this.simpleGrid.removeWidget(gridStackItemToBeDeleted);
     }
 
 }
