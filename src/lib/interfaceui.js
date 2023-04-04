@@ -8,6 +8,13 @@ class InterfaceUI {
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
         this.elementsNotToBeBlured = ['hat', 'portal-grid', 'footer'];
+        this.widgetItems = [
+            'Погода',
+            'Часы',
+            'Библиотека',
+            'Чат',
+            'Заменить картридж',
+        ];
 
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
@@ -149,16 +156,8 @@ class InterfaceUI {
         let widgetSubMenu = document.createElement('div');
         widgetSubMenu.classList.add("hat__widget-submenu");
 
-        let widgetListItems = [
-            'Погода',
-            'Часы',
-            'Библиотека',
-            'Чат',
-            'Заменить картридж'
-        ];
-
         let widgetListItemsHtml = "<ul>";
-            widgetListItems.forEach((litem)=>{
+            this.widgetItems.forEach((litem)=>{
                 let litemHmlt = "<li class='base-block'>" + litem + "</li>";
                 widgetListItemsHtml += litemHmlt;
             });
@@ -239,8 +238,6 @@ class InterfaceUI {
         this.addRemoveShakingForGridStackItem(gridStackItem);
 
         this.updatedObjectOfElements( gridStackItem, 'add' );
-
-        event.target.remove();
     }
 
 
