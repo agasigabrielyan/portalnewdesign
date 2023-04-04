@@ -131,6 +131,10 @@ input[type="search"]::-webkit-search-results-decoration {
     z-index: 2;
     height: 90px;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .hat__inner {
     height: 100%;
@@ -197,7 +201,7 @@ input[type="search"]::-webkit-search-results-decoration {
     transform: translateX(-50%);
     background-color: #F6F6F6;
     overflow: hidden;
-    transition: top 250ms;
+    transition: top 500ms;
     z-index: -1;
     background-image: url('../images/submenu-wallpaper.png');
     padding-top: 60px;
