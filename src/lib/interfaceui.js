@@ -159,7 +159,7 @@ class InterfaceUI {
 
         let widgetListItemsHtml = "<ul>";
             widgetListItems.forEach((litem)=>{
-                let litemHmlt = "<li class='base-block' onclick='addWidgetHandler()'>" + litem + "</li>";
+                let litemHmlt = "<li class='base-block'>" + litem + "</li>";
                 widgetListItemsHtml += litemHmlt;
             });
         widgetListItemsHtml += '</ul>';

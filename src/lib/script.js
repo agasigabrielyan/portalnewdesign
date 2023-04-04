@@ -43,8 +43,14 @@ window.onload = function() {
         }
     });
 
+    simpleGrid.on('resize', function(event, el) {
+        if( el.gridstackNode.h > 2 ) {
+            debugger;
+        }
+    });
+
     simpleGrid.on("change", function(event, items) {
-        debugger;
+
     });
 
     // инициализация интерфейса
