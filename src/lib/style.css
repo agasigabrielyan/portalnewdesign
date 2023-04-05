@@ -612,3 +612,12 @@ input[type="search"]::-webkit-search-results-decoration {
     75% { transform: translate(-2.5px, 2.5px) rotate(-2.5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
+
+
+
+
+.grid-stack>.grid-stack-item>.ui-resizable-se, .grid-stack>.grid-stack-item>.ui-resizable-sw {
+    background-image: url('../images/resize.svg')!important;
+    bottom: 20px!important;
+    right: 20px!important;
+}
