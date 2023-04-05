@@ -138,7 +138,6 @@ class InterfaceUI {
     openWidgetMenuWithTimeout() {
         if( document.querySelector('body').scrollTop === 0 ) {
             let hatWidgetHeading = document.querySelector('.hat__widget-heading');
-            hatWidgetHeading.click();
         }
     }
 
