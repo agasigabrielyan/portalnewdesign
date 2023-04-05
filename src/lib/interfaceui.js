@@ -86,7 +86,7 @@ class InterfaceUI {
             for( let i=0; i<allFirstChildElements.length; i++ ) {
                 let classListArray = allFirstChildElements[i].classList;
                 if( !(this.elementsNotToBeBlured.includes(classListArray[0])) ) {
-                    allFirstChildElements[i].style.filter = "blur(5px)";
+                    allFirstChildElements[i].style.filter = "blur(3px)";
                 }
             }
         }

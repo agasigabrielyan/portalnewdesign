@@ -88,6 +88,7 @@ html .ui-resizable-handle {
 }
 .hat__editable {
     filter: blur(0);
+    position: relative;
 }
 .ui-resizable-se {
     display: none!important;
@@ -117,6 +118,17 @@ input[type="search"]::-webkit-search-results-decoration {
     font-family: Manrope, serif;
     position: relative;
 
+}
+.hat .hat__shadow {
+    display: none;
+    width: 100%;
+    height: 10px;
+    margin-top: -10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+.hat_editable .hat__shadow {
+    display: block;
 }
 .hat .hat__edit {
     position: fixed;
@@ -285,7 +297,6 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     padding-left: 50px;
 }
-
 .widget-search:before {
     position: absolute;
     content: "";
