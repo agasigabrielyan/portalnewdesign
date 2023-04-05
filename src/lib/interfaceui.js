@@ -24,6 +24,7 @@ class InterfaceUI {
         this.removeConfirmOverflow();
         this.showSubmenuByAddWidgetButton();
         this.removeWidgets();
+        this.saveState();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
@@ -259,7 +260,9 @@ class InterfaceUI {
         window.addEventListener("click", function(event) {
             if( event.target.classList.contains("confirm__no") === true || event.target.classList.contains("confirm__yes") === true) {
                 if( document.querySelector(".delete-widget__overflow") !== 'undefined' ) {
-                    document.querySelector(".delete-widget__overflow").remove();
+                    if( document.querySelector(".delete-widget__overflow") !== null ) {
+                        document.querySelector(".delete-widget__overflow").remove();
+                    }
                 }
             }
         });
@@ -307,6 +310,15 @@ class InterfaceUI {
     removeDefinedWidget(gridStackItemToBeDeleted) {
         this.simpleGrid.removeWidget(gridStackItemToBeDeleted);
         this.removeConfirmOverflow();
+    }
+
+    // сохранить состояние грида
+    saveState() {
+        document.addEventListener('click', (event) => {
+            if(event.target.classList.contains('hat__save-workspace')) {
+                this.openCloseEditEnveronment();
+            }
+        })
     }
 
 }
