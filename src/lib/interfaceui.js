@@ -7,6 +7,7 @@ class InterfaceUI {
         this.portalGrid = document.querySelector('.portal-grid');
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
+        this.oldSimpleGrid = simpleGrid;
         this.elementsNotToBeBlured = ['hat', 'portal-grid', 'footer'];
         this.widgetItems = [
             'Погода',
@@ -17,6 +18,8 @@ class InterfaceUI {
         ];
         this.menuOutPosition = "90px";
         this.menuInPosition = "-3000px";
+        this.lastAddedXPosition = 0;
+        this.lastRemovedElement;
 
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
@@ -86,7 +89,7 @@ class InterfaceUI {
             for( let i=0; i<allFirstChildElements.length; i++ ) {
                 let classListArray = allFirstChildElements[i].classList;
                 if( !(this.elementsNotToBeBlured.includes(classListArray[0])) ) {
-                    allFirstChildElements[i].style.filter = "blur(3px)";
+                    allFirstChildElements[i].style.filter = "blur(2.5px)";
                 }
             }
         }
@@ -270,8 +273,12 @@ class InterfaceUI {
 
     // добавление нового виджета
     addGridItem(simpleGrid, info) {
+        this.lastAddedXPosition = window.localStorage.getItem('lastAddedXPosition') > 0 ? window.localStorage.getItem('lastAddedXPosition') : 0;
+
+        debugger;
+
         let gridStackItem =  this.simpleGrid.addWidget({
-            x: 0,
+            x: this.lastAddedXPosition,
             y: 0,
             w: 1,
             h: 1,
@@ -285,12 +292,21 @@ class InterfaceUI {
         this.addRemoveShakingForGridStackItem(gridStackItem);
 
         this.updatedObjectOfElements( gridStackItem, 'add' );
+
+        let newLastAddedXPosition = this.lastAddedXPosition > 2 ? 0 : (this.lastAddedXPosition + 1);
+        window.localStorage.setItem(
+            'lastAddedXPosition',
+            String(newLastAddedXPosition)
+        );
+
     }
 
 
     // обновление объекта элементов
     updatedObjectOfElements( itemAddedRemoved, action ) {
         if( action === 'add' ) {
+            // определим добавленный элемент в localStorage
+
         } else if( action === 'remove' ) {
             alert('Собираемся удалить элемент из списка');
         }
