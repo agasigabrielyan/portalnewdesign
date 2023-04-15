@@ -8,7 +8,7 @@ class InterfaceUI {
         this.workspaceEditButton = document.querySelector(".setup__button");
         this.simpleGrid = simpleGrid;
         this.oldSimpleGrid = simpleGrid;
-        this.elementsNotToBeBlured = ['hat', 'portal-grid', 'footer'];
+        this.elementsNotToBeBlured = ['hat', 'portal-grid', 'footer', 'setup'];
         this.widgetItems = [
             'Погода',
             'Часы',
@@ -52,6 +52,11 @@ class InterfaceUI {
     interfaceEditButtonClickHandler() {
         this.workspaceEditButton.addEventListener("click", (event) => {
             this.openCloseEditEnveronment();
+            if( !(this.layout.classList.contains('html__editable')) ) {
+                this.workspaceEditButton.innerText = "Нажмите, чтобы настроить домашнюю страницу";
+            } else {
+                this.workspaceEditButton.innerText = "Выйти из режима редактирования";
+            }
         });
     }
 
@@ -84,7 +89,9 @@ class InterfaceUI {
     closeEditEnvironment() {
         document.addEventListener("click",(e) => {
            if( e.target.classList.contains("portal-grid_editable") ) {
-               this.openCloseEditEnveronment();
+               if(e.target.classList.contains("setup__button")) {
+                   this.openCloseEditEnveronment();
+               }
            }
         });
     }
@@ -163,7 +170,8 @@ class InterfaceUI {
             let hatAddWidgetButton = document.createElement("div");
                 hatAddWidgetButton.classList.add(
                     "hat__widget-button",
-                    "hat__add-widget"
+                    "hat__add-widget",
+                    "any__button"
                 );
                 hatAddWidgetButton.innerHTML = "<div class='hat__widget-heading'>+ Добавить виджет</div>";
                 hatAddWidgetButton.appendChild(this.createSubmenuForWidgetButton());
@@ -171,7 +179,8 @@ class InterfaceUI {
             let hatSaveWorkspace = document.createElement('div');
                 hatSaveWorkspace.classList.add(
                     "hat__widget-button",
-                    "hat__save-workspace"
+                    "hat__save-workspace",
+                    "any__button"
                 );
             hatSaveWorkspace.innerText = "Сохранить";
             (this.hat.querySelector(".hat__edit")).appendChild(hatAddWidgetButton);

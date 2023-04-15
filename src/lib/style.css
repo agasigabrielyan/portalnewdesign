@@ -534,6 +534,14 @@ input[type="search"]::-webkit-search-results-decoration {
 .grid-stack-item-closer:hover:before {
     background: #F7A000;
 }
+.any__button {
+    transition: all 750ms;
+    -webkit-transition: all 750ms;
+    -moz-transition: all 750ms;
+}
+.any__button:hover {
+    background-color: #004dad;
+}
 .setup__button {
     position: relative;
     width: 520rem;
@@ -550,6 +558,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 40rem;
     cursor: pointer;
     font-weight: 400;
+    z-index: 1;
 }
 .setup__button:active {
     position: relative;
