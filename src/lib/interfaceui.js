@@ -43,7 +43,7 @@ class InterfaceUI {
         debugger;
     }
 
-    // обновить при загрузке страницы lastAddedXPosition
+    // обновить при загрузке страницы lastAddedXPosition, колонка в которую добавлялся виджет
     updateLastAddedXPosition() {
         window.localStorage.setItem('lastAddedXPosition', 0);
     }
