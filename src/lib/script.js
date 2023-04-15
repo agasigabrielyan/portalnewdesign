@@ -47,12 +47,12 @@ window.onload = function() {
 
     // при изменинии размеров отрабатывает этот метод
     simpleGrid.on('resize', function(event, el) {
-        if(el.gridstackNode.w === 1 && el.gridstackNode.h > 2) {
-            el.gridstackNode.h = 2;
-        } else if( el.gridstackNode.w > 1 && el.gridstackNode.h > 1 ) {
-            el.gridstackNode.h = 1;
-        } else if( el.gridstackNode.w > 1 && el.gridstackNode.h === 1 ) {
+        if(el.gridstackNode.w > 2) {
             el.gridstackNode.w = 2;
+        }
+
+        if( el.gridstackNode.h > 2 ) {
+            el.gridstackNode.h = 1;
         }
 
         // добавим и удалим grid-stack-item чтобы инициировать изменение сетки

@@ -275,8 +275,6 @@ class InterfaceUI {
     addGridItem(simpleGrid, info) {
         this.lastAddedXPosition = window.localStorage.getItem('lastAddedXPosition') > 0 ? window.localStorage.getItem('lastAddedXPosition') : 0;
 
-        debugger;
-
         let gridStackItem =  this.simpleGrid.addWidget({
             x: this.lastAddedXPosition,
             y: 0,
@@ -290,8 +288,6 @@ class InterfaceUI {
         this.changeStylesOfGridStackItem(gridStackItem);
         // добавление дрожания текущего grid-stack-item
         this.addRemoveShakingForGridStackItem(gridStackItem);
-
-        this.updatedObjectOfElements( gridStackItem, 'add' );
 
         let newLastAddedXPosition = this.lastAddedXPosition > 2 ? 0 : (this.lastAddedXPosition + 1);
         window.localStorage.setItem(
