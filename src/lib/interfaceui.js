@@ -28,12 +28,20 @@ class InterfaceUI {
         this.showSubmenuByAddWidgetButton();
         this.removeWidgets();
         this.saveState();
+        this.updateLastAddedXPosition();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
                 this.addGridItem(this.simpleGrid, e.target.innerText);
             }
         });
+    }
+
+    // обновить при загрузке страницы lastAddedXPosition
+    updateLastAddedXPosition() {
+        if( window.localStorage.getItem('lastAddedXPosition') !== null ) {
+            window.localStorage.setItem('lastAddedXPosition', 0);
+        }
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
@@ -273,7 +281,9 @@ class InterfaceUI {
 
     // добавление нового виджета
     addGridItem(simpleGrid, info) {
-        this.lastAddedXPosition = window.localStorage.getItem('lastAddedXPosition') > 0 ? window.localStorage.getItem('lastAddedXPosition') : 0;
+
+        // установим колонку 0, 1 или 2, куда будет добавлять новый виджет
+        this.setLastAddedXPosition();
 
         let gridStackItem =  this.simpleGrid.addWidget({
             x: this.lastAddedXPosition,
@@ -282,6 +292,9 @@ class InterfaceUI {
             h: 1,
             content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div></div><div>${info}</div></div>`
         });
+
+
+
         // добавление кнопки удаления текущему grid-stack-item
         this.addRemoveGridStackItemCloser(gridStackItem);
         // изменение стиля текущего grid-stack-item
@@ -289,12 +302,19 @@ class InterfaceUI {
         // добавление дрожания текущего grid-stack-item
         this.addRemoveShakingForGridStackItem(gridStackItem);
 
-        let newLastAddedXPosition = this.lastAddedXPosition > 2 ? 0 : (this.lastAddedXPosition + 1);
-        window.localStorage.setItem(
-            'lastAddedXPosition',
-            String(newLastAddedXPosition)
-        );
+    }
 
+    setLastAddedXPosition() {
+        debugger;
+        if( window.localStorage.getItem('lastAddedXPosition') !== null ) {
+            let position = parseInt(window.localStorage.getItem('lastAddedXPosition'));
+            this.lastAddedXPosition = position;
+            position > 1 ? position = 0 : position ++;
+            window.localStorage.setItem(
+                'lastAddedXPosition',
+                position
+            );
+        }
     }
 
     // удаление виджета
