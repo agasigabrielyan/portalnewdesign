@@ -14,12 +14,12 @@ window.onload = function() {
 
     let simpleGrid = GridStack.init({
         column: 3,
-        cellHeight: 260,
+        cellHeight: "260rem",
         disableOneColumnMode: true,
         disableDrag: true,
         disableResize: true,
         alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-        margin: 10,
+        margin: "10rem",
     }, '#simple-grid');
 
     simpleGrid.load(simple);

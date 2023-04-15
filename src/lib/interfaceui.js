@@ -16,8 +16,8 @@ class InterfaceUI {
             'Чат',
             'Заменить картридж',
         ];
-        this.menuOutPosition = "90px";
-        this.menuInPosition = "-3000px";
+        this.menuOutPosition = "90rem";
+        this.menuInPosition = "-3000rem";
         this.lastAddedXPosition = 0;
         this.lastRemovedElement;
 
@@ -101,7 +101,7 @@ class InterfaceUI {
             for( let i=0; i<allFirstChildElements.length; i++ ) {
                 let classListArray = allFirstChildElements[i].classList;
                 if( !(this.elementsNotToBeBlured.includes(classListArray[0])) ) {
-                    allFirstChildElements[i].style.filter = "blur(2.5px)";
+                    allFirstChildElements[i].style.filter = "blur(2.5rem)";
                 }
             }
         }
