@@ -262,6 +262,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .base-block__wrapper {
     position: relative;
+    margin-bottom: 30px;
 }
 .base-block__description {
     font-style: normal;
@@ -301,7 +302,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-top: 24rem;
     outline: none;
     position: relative;
-    padding-left: 50rem;
+    padding-left: 75rem;
 }
 .widget-search:before {
     position: absolute;

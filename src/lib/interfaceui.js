@@ -14,13 +14,14 @@ class InterfaceUI {
             'Часы',
             'Библиотека',
             'Чат',
-            'Заменить картридж',
+            'Заменить картридж'
         ];
         this.menuOutPosition = "90rem";
         this.menuInPosition = "-3000rem";
         this.lastAddedXPosition = 0;
         this.lastRemovedElement;
 
+        // инициализация методов
         this.interfaceEditButtonClickHandler();
         this.closeEditEnvironment();
         this.deleteWidget();
@@ -30,10 +31,10 @@ class InterfaceUI {
         this.saveState();
         this.updateLastAddedXPosition();
         this.writeSimpleDataIntoLocalStorage();
-
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
                 this.addGridItem(this.simpleGrid, e.target.innerText);
+                e.target.parentNode.remove();
             }
         });
     }
@@ -317,6 +318,7 @@ class InterfaceUI {
 
     }
 
+    // установка x позиции в localStorage
     setLastAddedXPosition() {
         if( window.localStorage.getItem('lastAddedXPosition') !== null ) {
             let position = parseInt(window.localStorage.getItem('lastAddedXPosition'));
