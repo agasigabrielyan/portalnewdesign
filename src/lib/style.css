@@ -1,6 +1,6 @@
 @import url('fonts.css');
 html {
-    font-size: calc(100vw / 1366);
+    font-size: calc(100vw / 1920);
 }
 html,body {
     margin: 0;
