@@ -54,7 +54,9 @@ window.onload = function() {
         } else if( el.gridstackNode.w > 1 && el.gridstackNode.h === 1 ) {
             el.gridstackNode.w = 2;
         }
-        simpleGrid.addWidget('<div id="just-a-widget" class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 3});
+
+        // добавим и удалим grid-stack-item чтобы инициировать изменение сетки
+        simpleGrid.addWidget('<div id="just-a-widget" class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 1, h: 1});
         simpleGrid.removeWidget(document.getElementById("just-a-widget"));
     });
 
