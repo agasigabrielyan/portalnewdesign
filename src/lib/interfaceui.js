@@ -301,17 +301,6 @@ class InterfaceUI {
 
     }
 
-
-    // обновление объекта элементов
-    updatedObjectOfElements( itemAddedRemoved, action ) {
-        if( action === 'add' ) {
-            // определим добавленный элемент в localStorage
-
-        } else if( action === 'remove' ) {
-            alert('Собираемся удалить элемент из списка');
-        }
-    }
-
     // удаление виджета
     removeWidgets() {
         document.addEventListener('click', (e) => {

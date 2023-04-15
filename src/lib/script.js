@@ -54,15 +54,8 @@ window.onload = function() {
         } else if( el.gridstackNode.w > 1 && el.gridstackNode.h === 1 ) {
             el.gridstackNode.w = 2;
         }
-    });
-
-
-    simpleGrid.on('change', function(event, items) {
-        debugger;
-    });
-
-    simpleGrid.on("change", function(event, items) {
-
+        simpleGrid.addWidget('<div id="just-a-widget" class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 3});
+        simpleGrid.removeWidget(document.getElementById("just-a-widget"));
     });
 
     // инициализация интерфейса
