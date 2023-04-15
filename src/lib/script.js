@@ -55,6 +55,10 @@ window.onload = function() {
             el.gridstackNode.h = 1;
         }
 
+        if( el.gridstackNode.w >= 2 && el.gridstackNode.h === 2) {
+            el.gridstackNode.h = 1;
+        }
+
         // добавим и удалим grid-stack-item чтобы инициировать изменение сетки
         simpleGrid.addWidget('<div id="just-a-widget" class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 1, h: 1});
         simpleGrid.removeWidget(document.getElementById("just-a-widget"));
