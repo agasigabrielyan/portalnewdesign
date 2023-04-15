@@ -612,9 +612,6 @@ input[type="search"]::-webkit-search-results-decoration {
     100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-
-
-
 .grid-stack>.grid-stack-item>.ui-resizable-se, .grid-stack>.grid-stack-item>.ui-resizable-sw {
     background-image: url('../images/resize.svg')!important;
     bottom: 20px!important;

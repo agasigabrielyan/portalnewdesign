@@ -29,6 +29,7 @@ class InterfaceUI {
         this.removeWidgets();
         this.saveState();
         this.updateLastAddedXPosition();
+        this.writeSimpleDataIntoLocalStorage();
 
         document.addEventListener("click", (e) => {
             if(e.target.classList.contains('base-block')) {
@@ -37,11 +38,14 @@ class InterfaceUI {
         });
     }
 
+    // запишем данные simple в localStorage
+    writeSimpleDataIntoLocalStorage() {
+        debugger;
+    }
+
     // обновить при загрузке страницы lastAddedXPosition
     updateLastAddedXPosition() {
-        if( window.localStorage.getItem('lastAddedXPosition') !== null ) {
-            window.localStorage.setItem('lastAddedXPosition', 0);
-        }
+        window.localStorage.setItem('lastAddedXPosition', 0);
     }
 
     // обработчик нажатия на кнопку редактирования интерфейса
@@ -305,7 +309,6 @@ class InterfaceUI {
     }
 
     setLastAddedXPosition() {
-        debugger;
         if( window.localStorage.getItem('lastAddedXPosition') !== null ) {
             let position = parseInt(window.localStorage.getItem('lastAddedXPosition'));
             this.lastAddedXPosition = position;
