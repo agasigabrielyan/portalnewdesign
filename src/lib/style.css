@@ -308,8 +308,8 @@ input[type="search"]::-webkit-search-results-decoration {
     content: "";
     top: 50%;
     left: 68rem;
-    width: 18rem;
-    height: 18rem;
+    width: 32rem;
+    height: 32rem;
     background-image: url(../images/search-icon.svg);
     background-repeat: no-repeat;
     background-size: auto;
