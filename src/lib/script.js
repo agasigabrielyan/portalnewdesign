@@ -1,7 +1,4 @@
 window.onload = function() {
-
-
-    
     let simple = [
         {x: 0, y: 0, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>1</div><div>Совместная работа</div></div>`},
         {x: 2, y: 0, w: 1, h: 2, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>2</div><div>Календарь</div></div>`},
@@ -27,6 +24,7 @@ window.onload = function() {
 
     simpleGrid.load(simple);
 
+    // при попытке переноса блока отрабатывает этот метод
     simpleGrid.on('dragstart', function(e, ui) {
         var grid = this;
         var element = e.target;
@@ -36,6 +34,7 @@ window.onload = function() {
         element.classList.remove("grid-stack-item_shaking-opposite");
     });
 
+    // при остановке переноса отрабатывает этот метод
     simpleGrid.on('dragstop', function(e, ui) {
         var grid = this;
         var element = e.target;
@@ -46,10 +45,20 @@ window.onload = function() {
         }
     });
 
+    // при изменинии размеров отрабатывает этот метод
     simpleGrid.on('resize', function(event, el) {
-        if( el.gridstackNode.h > 2 ) {
-            /*debugger;*/
+        if(el.gridstackNode.w === 1 && el.gridstackNode.h > 2) {
+            el.gridstackNode.h = 2;
+        } else if( el.gridstackNode.w > 1 && el.gridstackNode.h > 1 ) {
+            el.gridstackNode.h = 1;
+        } else if( el.gridstackNode.w > 1 && el.gridstackNode.h === 1 ) {
+            el.gridstackNode.w = 2;
         }
+    });
+
+
+    simpleGrid.on('change', function(event, items) {
+        debugger;
     });
 
     simpleGrid.on("change", function(event, items) {
