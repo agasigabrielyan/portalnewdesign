@@ -623,6 +623,6 @@ input[type="search"]::-webkit-search-results-decoration {
     background-image: url('../images/resize.svg')!important;
     bottom: 20rem!important;
     right: 20rem!important;
-    width: 20rem!important;
-    height: 20rem!important;
+    width: 30rem!important;
+    height: 30rem!important;
 }
