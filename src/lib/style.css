@@ -203,9 +203,21 @@ input[type="search"]::-webkit-search-results-decoration {
     z-index: 1;
 }
 
-.hat-info__menu li a:hover span {
-    border-bottom: 1rem solid #fff;
+ul.gazprom-lavalamp {
+    position: relative;
 }
+
+li.lavalamp {
+    z-index: 2;
+}
+li.lavalamp_active {
+    position: absolute;
+    transition: all 0.15s ease-in-out;
+    border-bottom: 1rem solid #fff;
+    padding-bottom: 30rem;
+    z-index: 1;
+}
+
 .hat-info__menu li a:active,
 .hat-info__menu li a:visited,
 .hat-info__menu li a:focus,

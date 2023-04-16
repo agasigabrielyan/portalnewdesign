@@ -20,6 +20,8 @@ class InterfaceUI {
         this.menuInPosition = "-3000rem";
         this.lastAddedXPosition = 0;
         this.lastRemovedElement;
+        this.gazpromLavalamp = document.querySelector(".gazprom-lavalamp");
+        this.lavalamps = document.querySelectorAll(".lavalamp");
 
         // инициализация методов
         this.interfaceEditButtonClickHandler();
@@ -40,6 +42,21 @@ class InterfaceUI {
                 }
             }
         });
+        this.lavalampHandler();
+    }
+
+    lavalampHandler() {
+        this.lavalamps.forEach(lavalamp => {
+            lavalamp.addEventListener('mouseenter', (event) => {
+
+                let width = event.target.querySelector("span").offsetWidth;
+                let left = event.target.querySelector("span").offsetLeft;
+
+                let lavalampItem = document.querySelector(".lavalamp_active");
+                lavalampItem.style.width = width + "px";
+                lavalampItem.style.left = left + "px";
+            })
+        })
     }
 
     // запишем данные simple в localStorage
