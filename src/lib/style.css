@@ -173,6 +173,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .hat-info__logo a:hover, .hat-info__logo a:active, .hat-info__logo a:visited, .hat-info__logo a:focus {
     text-decoration: none;
 }
+.hat-info__menu {
+    padding-top: 15rem;
+}
 .hat-info__menu ul {
     display: flex;
     align-items: center;
@@ -625,6 +628,8 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 20rem;
     background-image: url(../images/avatar-phone.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
     display: inline-block;
     margin-right:2.5rem;
 }
@@ -635,8 +640,10 @@ input[type="search"]::-webkit-search-results-decoration {
     background-repeat: no-repeat;
     display: inline-block;
     margin-left: 20rem;
+    background-size: 100%;
+    background-position: 50% 50%;
     position: relative;
-    top: 1rem;
+    top: -1rem;
 }
 
 .lower {
@@ -655,9 +662,9 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: #BDBDBD;
     position: absolute;
     top: 0;
-    left: -50000px;
-    height: 1000000px;
-    width: 1000000px;
+    left: -50000rem;
+    height: 1000000rem;
+    width: 1000000rem;
     z-index: 0;
 }
 
@@ -675,7 +682,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .lower ul li a {
     color: #000;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     text-decoration: none;
 }
 
@@ -688,17 +695,19 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-
     width: 20rem;
     height: 20rem;
-    display: inline-block;
     text-align: center;
-    padding-top: 2.5rem;
     font-style: normal;
     font-weight: 700;
     font-size: 12rem;
     line-height: 14rem;
     margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    float: left;
 }
 
 .widget_four-cols {
