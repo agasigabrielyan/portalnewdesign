@@ -86,7 +86,7 @@ class InterfaceUI {
         this.blurUnblurElements();
     }
 
-    // обработка нажатия на пустом участке во время режима редактирования == закрытие режима редактирования
+    // обработка нажатия на кнопку закрытия режима редактирования
     closeEditEnvironment() {
         document.addEventListener("click",(e) => {
            if( e.target.classList.contains("portal-grid_editable") ) {
@@ -128,7 +128,7 @@ class InterfaceUI {
         });
     }
 
-    // добавление кнопки удаления к grid-stack-item
+    // добавление или удаление кнопки удаления для grid-stack-item
     addRemoveGridStackItemCloser(gridStackItem) {
         if( gridStackItem.querySelector(".grid-stack-item-closer") ) {
             gridStackItem.removeChild(gridStackItem.querySelector(".grid-stack-item-closer"));
