@@ -1,6 +1,6 @@
 @import url('fonts.css');
 html {
-    font-size: calc(100vw / 1920);
+    font-size: calc(100vw / 1500);
 }
 html,body {
     margin: 0;
@@ -548,7 +548,20 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: #fff;
     border: 1rem solid #0079C2;
     border-radius: 20rem;
+    padding: 17rem;
 }
+.upper {
+    display: flex;
+}
+.upper__avatar {
+    width: 100rem;
+    height: 100rem;
+    background-image:url('../images/avatar-main.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}
+
 .widget_four-cols {
     width: 33.3%;
 }
