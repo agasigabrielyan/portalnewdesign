@@ -453,7 +453,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 10rem;
 }
 .header__button {
-    width: 140rem;
+    min-width: 200rem;
     height: 50rem;
     background-color: #005FAD;
     color: #fff;
