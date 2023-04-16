@@ -45,7 +45,6 @@ class InterfaceUI {
     // запишем данные simple в localStorage
     writeSimpleDataIntoLocalStorage() {
         console.log('Запишем данные gridstack в localStorage');
-        debugger;
     }
 
     // обновить при загрузке страницы lastAddedXPosition, колонка в которую добавлялся виджет

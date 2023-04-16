@@ -1,6 +1,6 @@
 @import url('fonts.css');
 html {
-    font-size: calc(100vw / 1500);
+    font-size: calc(100vw / 1920);
 }
 html,body {
     margin: 0;
@@ -186,12 +186,20 @@ input[type="search"]::-webkit-search-results-decoration {
     display: inline-block;
     padding-left: 43rem;
     padding-right: 43rem;
+    overflow: hidden;
 }
 .hat-info__menu li a span {
     border-bottom: 1rem solid transparent;
     transition: all 150ms;
     padding-bottom: 5rem;
+    position: relative;
+    display:inline-block;
 }
+
+.hat-info__menu li a:hover span:before {
+    z-index: 1;
+}
+
 .hat-info__menu li a:hover span {
     border-bottom: 1rem solid #fff;
 }
@@ -262,7 +270,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat__inner {
     height: 100%;
-    width: 1730rem;
+    width: 1400rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -448,7 +456,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .header__button {
     min-width: 200rem;
-    height: 50rem;
+    height: 70rem;
     background-color: #005FAD;
     color: #fff;
     margin-right: 1%;
@@ -540,7 +548,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: 20rem;
 }
 .header__widget {
-    height: 260rem;
+    height: 300rem;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -548,18 +556,149 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: #fff;
     border: 1rem solid #0079C2;
     border-radius: 20rem;
-    padding: 17rem;
+    padding: 25rem;
 }
+.avatar__widget {
+    width: 410rem;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 .upper {
     display: flex;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 16rem;
+    color: #828282;
+    width: 100%;
+    height: 150rem;
+    text-align: left;
+    margin-bottom: 20rem;
 }
 .upper__avatar {
-    width: 100rem;
-    height: 100rem;
+    width: 145rem;
+    height: 145rem;
     background-image:url('../images/avatar-main.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 50% 50%;
+    position: relative;
+    margin-right: 15rem;
+}
+.upper__info {
+    width: calc(100% - 160rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upper__note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30rem;
+    height: 30rem;
+    border: 2rem solid #808080FF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22rem;
+    line-height: 26rem;
+    color: #333333;
+    padding: 15rem;
+    background-color: #fff;
+}
+.upper__name {
+    font-weight: 700;
+    font-size: 26rem;
+    line-height: 26rem;
+    color: #333333;
+}
+.upper__phone {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.upper__phone_avatar{
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../images/avatar-phone.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right:2.5rem;
+}
+.upper__phone_tube {
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../images/profile-phone.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20rem;
+    position: relative;
+    top: 1rem;
+}
+
+.lower {
+    background-color: #BDBDBD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 16rem;
+    width: 100%;
+    position: relative;
+    padding-top:20rem;
+}
+
+.lower:before {
+    content: "";
+    background-color: #BDBDBD;
+    position: absolute;
+    top: 0;
+    left: -50000px;
+    height: 1000000px;
+    width: 1000000px;
+    z-index: 0;
+}
+
+.lower ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.lower ul li {
+    width: 50%;
+    text-align: left;
+}
+
+.lower ul li a {
+    color: #000;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.lower ul li a:hover, .lower ul li a:active, .lower ul li a:visited, .lower ul li a:focus {
+    text-decoration: none;
+}
+
+.lower ul li a span {
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 14rem;
+    margin-right: 10rem;
 }
 
 .widget_four-cols {
