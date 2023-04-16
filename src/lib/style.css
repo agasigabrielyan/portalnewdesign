@@ -117,11 +117,124 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat {
     background-color: #003F73;
-    height: 60rem;
+    height: 90rem;
     font-family: Manrope, serif;
     position: relative;
 
 }
+
+.hat-info {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.hat-info a, .hat-info a:hover, .hat-info a:active, .hat-info a:visited, .hat-info a:focus{
+    color: #fff;
+}
+.hat-info__logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35rem;
+    line-height: 41rem;
+}
+.hat-info__user_logo {
+    margin-right: 40rem;
+    position: relative;
+    height: 60rem;
+    width: 60rem;
+    display: inline-block;
+}
+.hat-info__notes {
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    top: -10rem;
+    right: -10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 8rem;
+    color: #333333;
+    background-color: #fff;
+    border: 1rem solid #003F73;
+
+}
+.hat-info__logo a {
+    color: #fff;
+}
+.hat-info__logo a:hover, .hat-info__logo a:active, .hat-info__logo a:visited, .hat-info__logo a:focus {
+    text-decoration: none;
+}
+.hat-info__menu ul {
+    display: flex;
+    align-items: center;
+}
+.hat-info__menu li a{
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 23rem;
+    display: inline-block;
+    padding-left: 43rem;
+    padding-right: 43rem;
+}
+.hat-info__menu li a span {
+    border-bottom: 1rem solid transparent;
+    transition: all 150ms;
+    padding-bottom: 5rem;
+}
+.hat-info__menu li a:hover span {
+    border-bottom: 1rem solid #fff;
+}
+.hat-info__menu li a:active,
+.hat-info__menu li a:visited,
+.hat-info__menu li a:focus,
+.hat-info__menu li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.hat-info__arrow-wrapper {
+    width: 30rem;
+    height: 30rem;
+    display: inline-block;
+    background-image: url(../images/avatar-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    position: relative;
+    top: 9rem;
+}
+.hat-info__my-env {
+    padding-bottom: 5rem;
+    border-bottom: 1rem solid transparent;
+    margin-right: 15rem;
+    transition: all 150ms;
+}
+
+.hat-info__user_link:hover, .hat-info__user_link:active, .hat-info__user_link:visited, .hat-info__user_link:focus {
+    text-decoration: none;
+    transition: 150ms;
+}
+
+.hat-info__user_link:hover .hat-info__arrow-wrapper{
+    animation: horizontal-shaking 0.6s linear;
+}
+
+.hat-info__user_link:hover .hat-info__my-env {
+    border-bottom: 1rem solid #fff;
+}
+
+
 .hat .hat__shadow {
     display: none;
     width: 100%;
@@ -155,7 +268,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat__inner {
     height: 100%;
-    width: 1268rem;
+    width: 1730rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -167,6 +280,9 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #FFFFFF;
     font-size: 25rem;
     max-width: 100%;
+}
+.hat__not-edit {
+    width: 100%;
 }
 .hat_editable .hat__not-edit {
     position: fixed;
@@ -219,7 +335,7 @@ input[type="search"]::-webkit-search-results-decoration {
     transform: translateX(-50%);
     background-color: #F6F6F6;
     overflow: hidden;
-    transition: top 250ms;
+    transition: top 750ms;
     z-index: -1;
     background-image: url('../images/submenu-wallpaper.png');
     padding-top: 60rem;
@@ -262,7 +378,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .base-block__wrapper {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
 }
 .base-block__description {
     font-style: normal;
@@ -627,6 +743,13 @@ input[type="search"]::-webkit-search-results-decoration {
     50% { transform: translate(0, 0) rotate(0deg); }
     75% { transform: translate(-2.5rem, 2.5rem) rotate(-2.5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
 }
 
 .grid-stack>.grid-stack-item>.ui-resizable-se, .grid-stack>.grid-stack-item>.ui-resizable-sw {

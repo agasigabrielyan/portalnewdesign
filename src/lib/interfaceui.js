@@ -35,13 +35,16 @@ class InterfaceUI {
             if(e.target.classList.contains('base-block')) {
                 this.addGridItem(this.simpleGrid, e.target.innerText);
                 e.target.parentNode.remove();
+                if( document.querySelectorAll('.base-block').length<=0 ) {
+                    document.querySelector(".hat__widget-heading").click();
+                }
             }
         });
     }
 
     // запишем данные simple в localStorage
     writeSimpleDataIntoLocalStorage() {
-        debugger;
+        alert('Запишем данные gridstack в localStorage');
     }
 
     // обновить при загрузке страницы lastAddedXPosition, колонка в которую добавлялся виджет
