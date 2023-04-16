@@ -122,7 +122,6 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
 
 }
-
 .hat-info {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -216,25 +215,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .hat-info__my-env {
     padding-bottom: 5rem;
-    border-bottom: 1rem solid transparent;
+    border-bottom: 1rem solid #fff;
     margin-right: 15rem;
     transition: all 150ms;
 }
-
 .hat-info__user_link:hover, .hat-info__user_link:active, .hat-info__user_link:visited, .hat-info__user_link:focus {
     text-decoration: none;
     transition: 150ms;
 }
-
 .hat-info__user_link:hover .hat-info__arrow-wrapper{
     animation: horizontal-shaking 0.6s linear;
 }
-
 .hat-info__user_link:hover .hat-info__my-env {
     border-bottom: 1rem solid #fff;
 }
-
-
 .hat .hat__shadow {
     display: none;
     width: 100%;
@@ -651,6 +645,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .grid-stack-item-closer:hover:before {
     background: #F7A000;
 }
+
 .any__button {
     transition: all 750ms;
     -webkit-transition: all 750ms;
@@ -659,6 +654,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .any__button:hover {
     background-color: #004dad;
 }
+
 .setup__button {
     position: relative;
     width: 520rem;
@@ -691,6 +687,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 100%;
     background: transparent;
 }
+
 .footer {
     height: 240rem;
     display: flex;
@@ -702,6 +699,44 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer_editable {
     z-index: 2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** animation **/
