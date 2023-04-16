@@ -668,7 +668,6 @@ li.lavalamp_active {
     position: relative;
     padding-top:20rem;
 }
-
 .lower:before {
     content: "";
     background-color: #BDBDBD;
@@ -679,25 +678,21 @@ li.lavalamp_active {
     width: 1000000rem;
     z-index: 0;
 }
-
 .lower ul {
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
-
 .lower ul li {
     width: 50%;
     text-align: left;
 }
-
 .lower ul li a {
     color: #000;
     display: inline-block;
     margin-bottom: 10rem;
     text-decoration: none;
 }
-
 .lower ul li a:hover, .lower ul li a:active, .lower ul li a:visited, .lower ul li a:focus {
     text-decoration: none;
 }
@@ -720,6 +715,8 @@ li.lavalamp_active {
     justify-content: center;
     padding-top: 3rem;
     float: left;
+    position: relative;
+    top: -3rem;
 }
 
 .widget_four-cols {
