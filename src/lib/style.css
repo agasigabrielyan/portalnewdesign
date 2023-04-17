@@ -560,6 +560,7 @@ li.lavalamp_active {
 .header__widgets {
     display: flex;
     margin-bottom: 20rem;
+    position: relative;
 }
 .header__widgets>div:first-child {
     margin-right: 20rem;
@@ -734,10 +735,12 @@ li.lavalamp_active {
     margin-bottom: 25rem;
 }
 .header-slider__inner {
-    width: 1720rem;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     max-width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
 }
 .header-slider__banner {
     width: 20%;
@@ -1051,6 +1054,30 @@ a.phone-book__link:hover,.phone-book__link:active, .phone-book__link:visited, .p
 }
 a.phone-book__link:hover .dinamic-link {
     animation: horizontal-shaking 0.75s linear;
+}
+.additional-data {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    font-weight: 800;
+    font-size: 48rem;
+    line-height: 56rem;
+    transform: translateY(-50%);
+    min-width: 150rem;
+    text-align: center;
+}
+.additional-data span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 19rem;
+    display: block;
+}
+.days-for-vacations{
+    color: #fff;
+}
+.days-for-earning{
+    color: #828282;
 }
 
 
