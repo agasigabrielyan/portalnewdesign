@@ -287,7 +287,7 @@ li.lavalamp_active {
 }
 .hat__inner {
     height: 100%;
-    width: 1400rem;
+    width: 1715rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -926,15 +926,50 @@ a.info_report4 {
 }
 
 .footer {
-    height: 240rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #003F73;
     position: relative;
+    padding-top: 70rem;
+    padding-bottom: 70rem;
 }
 .footer_editable {
     z-index: 2;
+}
+.footer__inner {
+    display: flex;
+    width: 1715rem;
+    padding-top: 34rem;
+    height: 100%;
+    color: #fff;
+}
+.footer__logo {
+    width: 120rem;
+    height: 60rem;
+    background-image: url(../images/footer__logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+.footer__cell {
+    width: 16.6%;
+}
+.footer__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22rem;
+    line-height: 13rem;
+    margin-bottom: 40rem;
+}
+.footer__menu {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 13rem;
+}
+.footer__menu ul li {
+    margin-bottom: 20rem;
 }
 
 
