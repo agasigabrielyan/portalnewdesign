@@ -970,6 +970,7 @@ a.info_report4 {
 }
 .footer__menu ul li {
     margin-bottom: 20rem;
+    cursor: pointer;
 }
 
 
