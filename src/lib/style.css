@@ -565,7 +565,7 @@ li.lavalamp_active {
     margin-right: 20rem;
 }
 .header__widget {
-    height: 300rem;
+    height: 260rem;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -593,8 +593,8 @@ li.lavalamp_active {
     margin-bottom: 20rem;
 }
 .upper__avatar {
-    width: 145rem;
-    height: 145rem;
+    width: 110rem;
+    height: 110rem;
     background-image:url('../images/avatar-main.svg');
     background-repeat: no-repeat;
     position: relative;
@@ -919,7 +919,6 @@ li.lavalamp_active {
 .phone-book__search {
 
 }
-
 .phone-book__search input {
     background-image:url('../images/main-search.svg');
     background-repeat: no-repeat;
@@ -936,43 +935,99 @@ li.lavalamp_active {
     height: 33rem;
     border-radius: 18rem;
 }
-
 .phone-book__search input::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 16rem;
     line-height: 19rem;
 }
-
 .phone-book__lower {
-
+    display: flex;
 }
 .phone-book__favorite {
 
 }
 .book-cell {
-
+    width: 50%;
+    text-align: left;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    padding-top: 36rem;
+    color: #333333;
 }
 .book-cell__heading {
-
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #333333;
+    opacity: 0.4;
+    margin-bottom: 15rem;
 }
 .book-cell__info {
 
 }
+
+.book-cell__info_right {
+    border-left: 1rem solid #ccc;
+    padding-left: 15rem;
+    padding-bottom: 6rem;
+}
+
 .book-cell__employee {
-
+    position: relative;
+    margin-bottom: 5rem;
 }
+
+.book-cell__employee * {
+    display: inline-block;
+}
+
 .book-cell__star {
-
+    width: 25rem;
+    height: 14rem;
+    background-image:url('../images/phone-book__star.svg');
+    background-repeat: no-repeat;
+    background-size: 14rem 14rem;
+    background-position: 0;
+    cursor: pointer;
+    position: relative;
+    top: 3rem;
 }
+
 .book-cell__avatar {
-
+    width: 30rem;
+    height: 20rem;
+    background-image:url('../images/phone-book__avatar.svg');
+    background-repeat: no-repeat;
+    background-size: 20rem 20rem;
+    background-position: 0;
+    cursor: pointer;
+    position: relative;
+    top: 4rem;
 }
+
+.book-cell__empty {
+    height: 20rem;
+}
+
 .book-cell__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 19rem
 
 }
 .book-cell__phone {
-
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Manrope, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 24rem;
 }
 
 
