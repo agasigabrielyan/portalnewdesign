@@ -716,7 +716,6 @@ li.lavalamp_active {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
     float: left;
     position: relative;
     top: -4rem;

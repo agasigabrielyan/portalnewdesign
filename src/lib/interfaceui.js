@@ -43,7 +43,15 @@ class InterfaceUI {
             }
         });
         this.lavalampHandler();
+        this.lavalampRemoveHandler();
     }
+
+    lavalampRemoveHandler() {
+        this.gazpromLavalamp.addEventListener('mouseleave',() => {
+            let activeLavalap = document.querySelector('.lavalamp_active');
+            activeLavalap.style.opacity = "0";
+        });
+    };
 
     lavalampHandler() {
         this.lavalamps.forEach(lavalamp => {
@@ -55,6 +63,7 @@ class InterfaceUI {
                 let lavalampItem = document.querySelector(".lavalamp_active");
                 lavalampItem.style.width = width + "px";
                 lavalampItem.style.left = left + "px";
+                lavalampItem.style.opacity = 1;
             })
         })
     }
