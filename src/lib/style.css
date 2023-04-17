@@ -211,7 +211,7 @@ li.lavalamp {
 li.lavalamp_active {
     position: absolute;
     transition: all 0.25s ease-in-out;
-    border-bottom: 1rem solid #fff;
+    border-bottom: 2rem solid #fff;
     padding-bottom: 30rem;
     z-index: 1;
 }
@@ -750,11 +750,49 @@ li.lavalamp_active {
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
-    border: 1rem solid #0079C2;
+    border: 1rem solid rgba(130, 130, 130, 0.5);
     border-radius: 20rem;
+    color: #888687;
 }
 .header-slider__banner:last-child {
     margin-right: 0;
+}
+a.info_report {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24rem;
+    line-height: 28rem;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15rem) 50%;
+    background-size: auto 112rem;
+    background-image: url("../images/info-banners/report.svg");
+    padding: 30rem 20rem;
+    padding-right: 110rem;
+    text-decoration: none;
+    color: #888687;
+}
+a.info_report:active, a.info_report:visited, a.info_report:focus, a.info_report:active {
+    color: #888687;
+    text-decoration: none;
+}
+a.info_report1 {
+    background-image: url("../images/info-banners/report1.svg");
+}
+a.info_report2 {
+    background-image: url("../images/info-banners/report2.svg");
+}
+a.info_report3 {
+    background-image: url("../images/info-banners/report3.svg");
+}
+a.info_report4 {
+    background-image: url("../images/info-banners/report4.svg");
+}
+
+.info_report span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 26rem;
 }
 
 .portal-grid {
