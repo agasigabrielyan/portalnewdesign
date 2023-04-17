@@ -897,8 +897,9 @@ li.lavalamp_active {
 }
 
 
-.phone-book {
 
+.phone-book {
+    position: relative;
 }
 .phone-book__upper {
     background: rgba(130, 130, 130, 0.5);
@@ -967,22 +968,18 @@ li.lavalamp_active {
 .book-cell__info {
 
 }
-
 .book-cell__info_right {
     border-left: 1rem solid #ccc;
     padding-left: 15rem;
     padding-bottom: 6rem;
 }
-
 .book-cell__employee {
     position: relative;
     margin-bottom: 5rem;
 }
-
 .book-cell__employee * {
     display: inline-block;
 }
-
 .book-cell__star {
     width: 25rem;
     height: 14rem;
@@ -994,7 +991,6 @@ li.lavalamp_active {
     position: relative;
     top: 3rem;
 }
-
 .book-cell__avatar {
     width: 30rem;
     height: 20rem;
@@ -1006,11 +1002,9 @@ li.lavalamp_active {
     position: relative;
     top: 4rem;
 }
-
 .book-cell__empty {
     height: 20rem;
 }
-
 .book-cell__name {
     font-style: normal;
     font-weight: 400;
@@ -1028,6 +1022,35 @@ li.lavalamp_active {
     font-weight: 500;
     font-size: 16rem;
     line-height: 24rem;
+}
+a.phone-book__link{
+    position: absolute;
+    top: 60rem;
+    right: 16rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none!important;
+    color: #828282;
+    width: 100%;
+    text-align: right;
+    justify-content: end;
+}
+a.phone-book__link:hover,.phone-book__link:active, .phone-book__link:visited, .phone-book__link:focust {
+    text-decoration: none!important;
+    outline: none;
+}
+.phone-book__link-arrow{
+    width: 20rem;
+    height: 20rem;
+    background-image: url('../images/all-employees-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 20rem 20rem;
+    background-position: 50% 50%;
+    display: inline-block;
+    margin-left: 15rem;
+}
+a.phone-book__link:hover .dinamic-link {
+    animation: horizontal-shaking 0.75s linear;
 }
 
 
