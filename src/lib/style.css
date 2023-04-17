@@ -249,7 +249,7 @@ li.lavalamp_active {
     transition: 150ms;
 }
 .hat-info__user_link:hover .hat-info__arrow-wrapper{
-    animation: horizontal-shaking 0.6s linear;
+    animation: horizontal-shaking 0.75s linear;
 }
 .hat-info__user_link:hover .hat-info__my-env {
     border-bottom: 1rem solid #fff;
