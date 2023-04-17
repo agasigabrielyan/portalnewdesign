@@ -103,8 +103,7 @@ body {
     background-color: transparent!important;
     font-style: normal;
     font-weight: 400;
-    font-size: 30rem;
-    line-height: 24rem;
+    font-size: 14rem;
     color: #26A6E0;
 }
 body::-webkit-scrollbar {  display: none;}
@@ -727,6 +726,9 @@ li.lavalamp_active {
 }
 .widget_eight-cols {
     width: 66.6%;
+    display: block;
+    overflow: hidden;
+    padding: 0;
 }
 .header-slider {
     margin-bottom: 25rem;
@@ -892,6 +894,85 @@ li.lavalamp_active {
 }
 .footer_editable {
     z-index: 2;
+}
+
+
+.phone-book {
+
+}
+.phone-book__upper {
+    background: rgba(130, 130, 130, 0.5);
+    display: flex;
+    height: 50rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30rem;
+    padding-right: 10rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22rem;
+    line-height: 26rem;
+}
+.phone-book__heading {
+    color: #fff;
+}
+.phone-book__search {
+
+}
+
+.phone-book__search input {
+    background-image:url('../images/main-search.svg');
+    background-repeat: no-repeat;
+    background-size: 17rem 17rem;
+    background-position: 18rem;
+    padding-left: 43rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 19rem;
+    width: 330rem;
+    border: none;
+    outline: none;
+    height: 33rem;
+    border-radius: 18rem;
+}
+
+.phone-book__search input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 19rem;
+}
+
+.phone-book__lower {
+
+}
+.phone-book__favorite {
+
+}
+.book-cell {
+
+}
+.book-cell__heading {
+
+}
+.book-cell__info {
+
+}
+.book-cell__employee {
+
+}
+.book-cell__star {
+
+}
+.book-cell__avatar {
+
+}
+.book-cell__name {
+
+}
+.book-cell__phone {
+
 }
 
 
