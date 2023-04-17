@@ -448,7 +448,7 @@ li.lavalamp_active {
     height: 32rem;
     background-image: url(../images/search-icon.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     background-position: 50% 50%;
     transform: translateY(calc(-50% - 3rem));
     z-index: 1;
