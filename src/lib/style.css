@@ -206,16 +206,19 @@ input[type="search"]::-webkit-search-results-decoration {
 ul.gazprom-lavalamp {
     position: relative;
 }
-
 li.lavalamp {
     z-index: 2;
 }
 li.lavalamp_active {
     position: absolute;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.25s ease-in-out;
     border-bottom: 1rem solid #fff;
     padding-bottom: 30rem;
     z-index: 1;
+}
+
+.phone-book {
+
 }
 
 .hat-info__menu li a:active,
@@ -716,7 +719,7 @@ li.lavalamp_active {
     padding-top: 3rem;
     float: left;
     position: relative;
-    top: -3rem;
+    top: -4rem;
 }
 
 .widget_four-cols {
