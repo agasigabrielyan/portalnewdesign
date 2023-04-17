@@ -564,6 +564,7 @@ li.lavalamp_active {
 }
 .header__widgets>div:first-child {
     margin-right: 20rem;
+    padding-top: 45rem;
 }
 .header__widget {
     height: 260rem;
