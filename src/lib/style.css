@@ -780,7 +780,7 @@ a.info_report {
     color: #888687;
 }
 a.info_report:active, a.info_report:visited, a.info_report:focus, a.info_report:active {
-    color: #888687;
+    color: #003F73;
     text-decoration: none;
 }
 a.info_report1 {
