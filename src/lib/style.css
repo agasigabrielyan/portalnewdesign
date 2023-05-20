@@ -87,7 +87,7 @@ html .ui-resizable-handle {
     display: none;
 }
 .html__editable {
-    background-image: url('../images/wallpaper-editable.jpg');
+    background-image: url('../images/wallpaper.jpg');
 }
 .hat__editable {
     filter: blur(0);
@@ -578,7 +578,6 @@ li.lavalamp_active {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    border: 1rem solid #0079C2;
     border-radius: 20rem;
     padding: 25rem;
 }
@@ -672,7 +671,7 @@ li.lavalamp_active {
 }
 
 .lower {
-    background-color: #BDBDBD;
+    background-color: #A8C9E3;
     font-style: normal;
     font-weight: 400;
     font-size: 14rem;
@@ -683,7 +682,7 @@ li.lavalamp_active {
 }
 .lower:before {
     content: "";
-    background-color: #BDBDBD;
+    background-color: #A8C9E3;
     position: absolute;
     top: 0;
     left: -50000rem;
@@ -988,7 +987,7 @@ a.info_report4 {
     position: relative;
 }
 .phone-book__upper {
-    background: rgba(130, 130, 130, 0.5);
+    background: #5B86F5;
     display: flex;
     height: 50rem;
     align-items: center;
@@ -1016,7 +1015,7 @@ a.info_report4 {
     font-weight: 400;
     font-size: 16rem;
     line-height: 19rem;
-    width: 330rem;
+    width: 500rem;
     border: none;
     outline: none;
     height: 33rem;
@@ -1128,12 +1127,15 @@ a.phone-book__link:hover,.phone-book__link:active, .phone-book__link:visited, .p
 .phone-book__link-arrow{
     width: 20rem;
     height: 20rem;
-    background-image: url('../images/all-employees-arrow.svg');
+    background-image: url(../images/all-employees-arrow.svg);
     background-repeat: no-repeat;
-    background-size: 20rem 20rem;
+    background-size: 10rem 15rem;
     background-position: 50% 50%;
     display: inline-block;
     margin-left: 15rem;
+    background-color: #ADC2FA;
+    padding: 15rem;
+    border-radius: 50%;
 }
 a.phone-book__link:hover .dinamic-link {
     animation: horizontal-shaking 0.75s linear;
