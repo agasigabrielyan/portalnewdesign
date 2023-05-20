@@ -648,14 +648,16 @@ li.lavalamp_active {
     justify-content: end;
 }
 .upper__phone_avatar{
-    width: 20rem;
-    height: 20rem;
+    width: 23rem;
+    height: 23rem;
     background-image: url(../images/avatar-phone.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 50%;
     display: inline-block;
     margin-right:2.5rem;
+    position: relative;
+    top: -1rem;
 }
 .upper__phone_tube {
     width: 20rem;
@@ -671,7 +673,7 @@ li.lavalamp_active {
 }
 
 .lower {
-    background-color: #A8C9E3;
+    background-color: #CDEBFE;
     font-style: normal;
     font-weight: 400;
     font-size: 14rem;
@@ -682,7 +684,7 @@ li.lavalamp_active {
 }
 .lower:before {
     content: "";
-    background-color: #A8C9E3;
+    background-color: #CDEBFE;
     position: absolute;
     top: 0;
     left: -50000rem;
@@ -738,6 +740,7 @@ li.lavalamp_active {
     display: block;
     overflow: hidden;
     padding: 0;
+    background-color: #cdebfe;
 }
 .header-slider {
     margin-bottom: 25rem;
@@ -987,7 +990,7 @@ a.info_report4 {
     position: relative;
 }
 .phone-book__upper {
-    background: #5B86F5;
+    background: #0079C2;
     display: flex;
     height: 50rem;
     align-items: center;
@@ -1133,7 +1136,7 @@ a.phone-book__link:hover,.phone-book__link:active, .phone-book__link:visited, .p
     background-position: 50% 50%;
     display: inline-block;
     margin-left: 15rem;
-    background-color: #ADC2FA;
+    background-color: #80BCE0;
     padding: 15rem;
     border-radius: 50%;
 }
@@ -1159,10 +1162,10 @@ a.phone-book__link:hover .dinamic-link {
     display: block;
 }
 .days-for-vacations{
-    color: #fff;
+    color: #0079C2;
 }
 .days-for-earning{
-    color: #828282;
+    color: #003F73;
 }
 
 
