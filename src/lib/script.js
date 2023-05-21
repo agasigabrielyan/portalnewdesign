@@ -1,23 +1,4 @@
 window.onload = function() {
-    let ser = `
-                <div class="gazprom__widget">
-                    <div class="gazprom__heading">
-                        Мои услуги
-                    </div>
-                    <div class="gazprom__items">
-                        <div class="gazprom__item">Оборудование</div>
-                        <div class="gazprom__item">Магазин канцтоваров</div>
-                        <div class="gazprom__item">Заменить картридж</div>
-                        <div class="gazprom__item">Бронирование переговорных</div>
-                        <div class="gazprom__item">Установить ПО</div>
-                        <div class="gazprom__item">Заказать пропуск</div>
-                        <div class="gazprom__item">Услуга/Сервис для тебя</div>
-                        <div class="gazprom__item">Услуга/Сервис для тебя</div>
-                        <div class="gazprom__item">Услуга/Сервис для тебя</div>
-                    </div>
-                </div>
-    `;
-
 
     let collaboration = `
         <div class="widget">
@@ -34,16 +15,154 @@ window.onload = function() {
             </div>
         </div>
     `;
-    let myEvents = `Мои события тут`;
-    let myServices = `Мои услуги здесь`;
+    let myEvents = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Мои события
+                </div>
+                <div class="widget__link">
+                    все события
+                </div>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+    let myServices = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Мои услуги
+                </div>
+                <a class="widget__link">
+                    все услуги
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
 
-    let sadPaoGazprom = `sadPaoGazprom`;
-    let statusASES = `statusASES`;
-    let purASBU = `purASBU`;
-    let myNews = `myNews`;
-    let mySystems = `Мои системы`;
-    let buses = `Автобусы`;
-    let myRequests = `Мои запросы!!!`;
+    let sadPaoGazprom = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    САД ПАО «Газпром»
+                </div>
+                <a class="widget__link">
+                    перейти
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+
+    let statusASES = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Статус АСЭЗ
+                </div>
+                <a class="widget__link">
+                    перейти
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+
+    let purASBU = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    ПУР АСБУ
+                </div>
+                <a class="widget__link">
+                    перейти
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+
+
+
+    let myNews = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Мои новости
+                </div>
+                <a class="widget__link">
+                    все новости
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+
+    let mySystems = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Мои системы
+                </div>
+                <a class="widget__link">
+                    ЦОД-М
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+
+
+
+    let buses = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Автобусы
+                </div>
+                <a class="widget__link">
+                    все
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+
+
+
+    let myRequests = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Мои запросы
+                </div>
+                <a class="widget__link">
+                    все запросы
+                </a>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
 
 
 

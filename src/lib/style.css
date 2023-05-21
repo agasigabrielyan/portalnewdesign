@@ -588,6 +588,7 @@ li.lavalamp_active {
 }
 
 .upper {
+    position: relative;
     display: flex;
     font-weight: 400;
     font-size: 14rem;
@@ -596,7 +597,18 @@ li.lavalamp_active {
     width: 100%;
     height: 150rem;
     text-align: left;
-    margin-bottom: 20rem;
+    padding-bottom: 20rem;
+}
+
+.upper:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -50000rem;
+    height: 1000000rem;
+    width: 1000000rem;
+    z-index: -1;
 }
 .upper__avatar {
     width: 110rem;
@@ -673,7 +685,6 @@ li.lavalamp_active {
 }
 
 .lower {
-    background-color: #CDEBFE;
     font-style: normal;
     font-weight: 400;
     font-size: 14rem;
@@ -684,7 +695,7 @@ li.lavalamp_active {
 }
 .lower:before {
     content: "";
-    background-color: #CDEBFE;
+    background: rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
     left: -50000rem;
@@ -734,13 +745,14 @@ li.lavalamp_active {
 
 .widget_four-cols {
     width: 33.3%;
+    background-color: transparent;
 }
 .widget_eight-cols {
     width: 66.6%;
     display: block;
     overflow: hidden;
     padding: 0;
-    background-color: #cdebfe;
+    background: rgba(255, 255, 255, 0.7);
 }
 .header-slider {
     margin-bottom: 25rem;
