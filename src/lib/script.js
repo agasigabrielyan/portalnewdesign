@@ -108,7 +108,12 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="common-widget">
+                    <div class="common-widget__item"><span>12</span> Новых поручений/документов</div>
+                    <div class="common-widget__item"><span>10</span> Принято на рассмотрение</div>
+                    <div class="common-widget__item"><span>3</span> В работе</div>
+                    <div class="common-widget__item"><span>0</span> Просрочено по срокам согласования</div>
+                </div>
             </div>
         </div>
     `;
@@ -123,7 +128,12 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="common-widget">
+                    <div class="common-widget__item"><span>19</span>Новых ППЗ/ДО</div>
+                    <div class="common-widget__item"><span>10</span>Отправлено на согласование</div>
+                    <div class="common-widget__item"><span>5</span>Возвращено на доработку</div>
+                    <div class="common-widget__item"><span>4</span>Согласовано</div>
+                </div>
             </div>
         </div>
     `;
@@ -138,7 +148,12 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="common-widget">
+                    <div class="common-widget__item"><span>10</span>Новых договоров</div>
+                    <div class="common-widget__item"><span>6</span>Отправлено на согласование</div>
+                    <div class="common-widget__item"><span>2</span>Возвращено на доработку</div>
+                    <div class="common-widget__item"><span>2</span>Согласовано</div>
+                </div>
             </div>
         </div>
     `;

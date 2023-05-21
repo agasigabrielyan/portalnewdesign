@@ -211,6 +211,54 @@
     display: none;
 }
 
+
+
 /** настройки виджета цифровых сервисов **/
+.common-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.common-widget__item{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 32rem;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.common-widget__item span {
+    display: inline-block;
+    width: 30rem;
+    height: 30rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 32rem;
+    background-color: #fff;
+    color: #0079C2;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    margin-right: 10rem;
+}
+
+.grid-stack-item__small .common-widget {
+
+}
+
+.grid-stack-item__long .common-widget {
+
+}
+
+.grid-stack-item__high .common-widget {
+
+}
+
 
 
