@@ -248,6 +248,50 @@
 
 
 /** настройки виджета новостей **/
+.my-news {
+
+}
+
+.my-news__search {
+
+}
+
+.my-news__filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-news__filter-item {
+
+}
+
+.my-news__list {
+    
+}
+
+.my-news__list ul li {
+    display: flex;
+}
+
+.my-news__image {
+
+}
+
+.my-news__info {
+
+}
+
+.my-news__top {
+
+}
+
+.my-news__name {
+
+}
+
+.my-news__tags {
+
+}
 
 
 
