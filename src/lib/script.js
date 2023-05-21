@@ -11,7 +11,24 @@ window.onload = function() {
                 </div>
             </div>
             <div class="widget__body">
-        
+                <div class="collaborate">
+                    <div class="collaborate__cell">
+                        <div class="collaborate__heading">Корпоративный портал</div>
+                        <ul>
+                            <li class="collaborate__item"><span>13</span>  Новых задач</li>
+                            <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
+                            <li class="collaborate__item"><span>8 </span>  Новых документов</li>
+                        </ul>
+                    </div>
+                    <div class="collaborate__cell">
+                        <div class="collaborate__heading">CУУЗ</div>
+                         <ul>
+                            <li class="collaborate__item"><span>13</span>  Новых задач</li>
+                            <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
+                            <li class="collaborate__item"><span>8 </span>  Новых документов</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -150,7 +167,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
 
     let simple = [
         {x: 0, y: 0, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${collaboration}</div>`},
