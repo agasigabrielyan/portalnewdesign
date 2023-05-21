@@ -6,9 +6,9 @@ window.onload = function() {
                 <div class="widget__name">
                     Совместная работа
                 </div>
-                <div class="widget__link">
+                <a href="" class="widget__link">
                     все проекты
-                </div>
+                </a>
             </div>
             <div class="widget__body">
                 <div class="collaborate">
@@ -38,9 +38,9 @@ window.onload = function() {
                 <div class="widget__name">
                     Мои события
                 </div>
-                <div class="widget__link">
+                <a href="" class="widget__link">
                     все события
-                </div>
+                </a>
             </div>
             <div class="widget__body">
         
@@ -58,7 +58,57 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="my-services">
+                    <ul>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Оборудование</span>
+                                <span class="my-services__desc">Получить/Переместить/Вернуть</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Магазин канцтоваров</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Заменить картридж</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Оборудование</span>
+                                <span class="my-services__desc">Получить/Переместить/Вернуть</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Магазин канцтоваров</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Заменить картридж</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Оборудование</span>
+                                <span class="my-services__desc">Получить/Переместить/Вернуть</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Магазин канцтоваров</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     `;

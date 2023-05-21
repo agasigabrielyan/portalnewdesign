@@ -26,7 +26,7 @@
     line-height: 26rem;
 }
 .widget__link {
-    padding-right: 30rem;
+    padding-right: 43rem;
     position: relative;
     color: #fff;
     text-decoration: none;
@@ -144,5 +144,83 @@
 
 
 /** настройки виджета с внешним отображением как мои услуги **/
+.my-services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-services ul {
+    width: calc(33.3% - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-right: 10rem;
+}
+
+.my-services ul:last-child {
+    margin-right: 0;
+}
+
+.my-services__item{
+    background: #FFFFFF;
+    box-shadow: 0 0 5rem rgba(0, 95, 173, 0.2);
+    border-radius: 10rem;
+    height: 50rem;
+    margin-bottom: 10rem;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    padding: 10rem;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.my-services__item span {
+    display: block;
+}
+
+.my-services__item a:hover, .my-services__item a:active, .my-services__item a:visited, .my-services__item a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.my-services__name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 16rem;
+    color: #333333;
+}
+
+.my-services__desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 18rem;
+    color: #828282;
+}
+
+.grid-stack-item__small .my-services ul:not(:first-child) {
+    display: none;
+}
+
+.grid-stack-item__small .my-services ul:first-child {
+    margin-right: 0;
+}
+
+.grid-stack-item__high .my-services {
+    flex-direction: column;
+    height: 100%;
+}
+
+.grid-stack-item__high .my-services ul {
+    width: 100%;
+}
+
+.grid-stack-item__high .my-services ul:nth-child(3n) {
+    display: none;
+}
 
 
