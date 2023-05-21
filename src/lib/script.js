@@ -1,5 +1,5 @@
 window.onload = function() {
-    let myServices = `
+    let ser = `
                 <div class="gazprom__widget">
                     <div class="gazprom__heading">
                         Мои услуги
@@ -19,17 +19,46 @@ window.onload = function() {
     `;
 
 
+    let collaboration = `
+        <div class="widget">
+            <div class="widget__header">
+                <div class="widget__name">
+                    Совместная работа
+                </div>
+                <div class="widget__link">
+                    все проекты
+                </div>
+            </div>
+            <div class="widget__body">
+        
+            </div>
+        </div>
+    `;
+    let myEvents = `Мои события тут`;
+    let myServices = `Мои услуги здесь`;
+
+    let sadPaoGazprom = `sadPaoGazprom`;
+    let statusASES = `statusASES`;
+    let purASBU = `purASBU`;
+    let myNews = `myNews`;
+    let mySystems = `Мои системы`;
+    let buses = `Автобусы`;
+    let myRequests = `Мои запросы!!!`;
+
+
+
+
     let simple = [
-        {x: 0, y: 0, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >hi there</div>`},
-        {x: 2, y: 0, w: 1, h: 2, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>2</div><div>Календарь</div></div>`},
-        {x: 0, y: 1, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>3</div><div>Совместная работа</div></div>`},
-        {x: 0, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>4</div><div>САД ПАО “Газпром”</div></div>`},
-        {x: 1, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>5</div><div>Статус АСЭЗ</div></div>`},
-        {x: 2, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>6</div><div>ПУР АСБУ</div></div>`},
-        {x: 0, y: 3, w: 1, h: 2, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>7</div><div>Мои новости</div></div>`},
-        {x: 1, y: 3, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>8</div><div>Мои системы</div></div>`},
-        {x: 2, y: 3, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>9</div><div>Расписание автобусов</div></div>`},
-        {x: 1, y: 4, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>10</div><div>Мои запросы в службу поддержки</div></div>`},
+        {x: 0, y: 0, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${collaboration}</div>`},
+        {x: 2, y: 0, w: 1, h: 2, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${myEvents}</div>`},
+        {x: 0, y: 1, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${myServices}</div>`},
+        {x: 0, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${sadPaoGazprom}</div>`},
+        {x: 1, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${statusASES}</div>`},
+        {x: 2, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${purASBU}</div>`},
+        {x: 0, y: 3, w: 1, h: 2, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${myNews}</div>`},
+        {x: 1, y: 3, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${mySystems}</div>`},
+        {x: 2, y: 3, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${buses}</div>`},
+        {x: 1, y: 4, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${myRequests}</div>`},
     ];
 
     let simpleGrid = GridStack.init({

@@ -847,15 +847,11 @@ a.info_report4 {
 .grid-stack-item_shaking-opposite {
     animation: tilt-shaking-opposite 0.6s linear infinite;
 }
-.grid-stack-item_edit-mode .grid-stack-item-content {
-    border: 1rem solid #0079C2;
-}
 .grid-stack-item_under-edit .grid-stack-item-content{
     background-color: orange;
     color: #fff;
 }
 .grid-stack-item-content {
-    background-color: white;
     text-align: center;
     border-radius: 20rem;
     display: flex;
