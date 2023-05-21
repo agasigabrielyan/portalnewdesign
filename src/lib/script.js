@@ -45,7 +45,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
     let sadPaoGazprom = `
         <div class="widget">
             <div class="widget__header">
@@ -61,7 +60,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
     let statusASES = `
         <div class="widget">
             <div class="widget__header">
@@ -77,7 +75,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
     let purASBU = `
         <div class="widget">
             <div class="widget__header">
@@ -93,9 +90,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
-
-
     let myNews = `
         <div class="widget">
             <div class="widget__header">
@@ -111,7 +105,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
     let mySystems = `
         <div class="widget">
             <div class="widget__header">
@@ -127,9 +120,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
-
-
     let buses = `
         <div class="widget">
             <div class="widget__header">
@@ -145,9 +135,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
-
-
     let myRequests = `
         <div class="widget">
             <div class="widget__header">
@@ -163,8 +150,6 @@ window.onload = function() {
             </div>
         </div>
     `;
-
-
 
 
     let simple = [

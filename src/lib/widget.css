@@ -1,16 +1,15 @@
+/** общие настройки для виджетова **/
 .gridstack-main-class {
     box-shadow: 0 0 3rem purple;
     width: 100%;
     height: 100%;
 }
-
 .widget {
     height: 100%;
     text-align: left;
     box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
-
 .widget__header {
     color: #fff;
     background-color: #0079C2;
@@ -19,19 +18,22 @@
     align-items: center;
     padding: 12rem 25rem 12rem 25rem;
 }
-
 .widget__name {
     font-style: normal;
     font-weight: 500;
     font-size: 22rem;
     line-height: 26rem;
 }
-
 .widget__link {
     padding-right: 30rem;
     position: relative;
+    color: #fff;
+    text-decoration: none;
 }
-
+.widget__link:hover, .widget__link:active, .widget__link:visited, .widget__link:focus {
+    color: #fff;
+    text-decoration: none;
+}
 .widget__link:after {
     content: "";
     position: absolute;
@@ -49,14 +51,16 @@
     top: -4rem;
 
 }
-
 .widget__link:hover:after {
     animation: horizontal-shaking 0.75s linear;
 }
-
 .widget__body {
     position: relative;
     padding: 12rem 25rem 12rem 25rem;
     background: rgba(255, 255, 255, 0.7);
     height: 100%;
 }
+
+
+/** настройки виджета совместная работа **/
+
