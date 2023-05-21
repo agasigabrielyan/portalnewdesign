@@ -1,5 +1,5 @@
 window.onload = function() {
-    let services = `
+    let myServices = `
                 <div class="gazprom__widget">
                     <div class="gazprom__heading">
                         Мои услуги
@@ -20,7 +20,7 @@ window.onload = function() {
 
 
     let simple = [
-        {x: 0, y: 0, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >${services}</div>`},
+        {x: 0, y: 0, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' >hi there</div>`},
         {x: 2, y: 0, w: 1, h: 2, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>2</div><div>Календарь</div></div>`},
         {x: 0, y: 1, w: 2, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>3</div><div>Совместная работа</div></div>`},
         {x: 0, y: 2, w: 1, h: 1, content: `<div class='gridstack-main-class' id='${ (Math.random() + 1).toString(36).substring(7) }' ><div>4</div><div>САД ПАО “Газпром”</div></div>`},
