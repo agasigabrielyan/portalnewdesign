@@ -220,7 +220,6 @@
     justify-content: space-between;
     height: 100%;
 }
-
 .common-widget__item{
     font-style: normal;
     font-weight: 400;
@@ -230,7 +229,6 @@
     align-items: center;
     color: #000000;
 }
-
 .common-widget__item span {
     display: inline-block;
     width: 30rem;
@@ -248,17 +246,10 @@
     margin-right: 10rem;
 }
 
-.grid-stack-item__small .common-widget {
 
-}
+/** настройки виджета новостей **/
 
-.grid-stack-item__long .common-widget {
 
-}
-
-.grid-stack-item__high .common-widget {
-
-}
 
 
 

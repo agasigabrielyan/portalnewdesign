@@ -168,7 +168,71 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="my-news">
+                    <div class="my-news__search">
+                        <input type="text" />
+                    </div>
+                    <div class="my-news__filter">
+                        <div class="my-news__filter-item">Все новости</div>
+                        <div class="my-news__filter-item">Департамент</div>
+                        <div class="my-news__filter-item">Отдых</div>
+                        <div class="my-news__filter-item">Мероприятия</div>
+                        <div class="my-news__filter-item">Сообщества</div>
+                        <div class="my-news__filter-item">Группы</div>
+                    </div>
+                    <div class="my-news__list">
+                        <ul>
+                            <li>
+                                <div class="my-news__image"><img src="./src/images/no-photo.svg" /></div>
+                                <div class="my-news__info">
+                                    <div class="my-news__top">
+                                        <span>25 Января</span>
+                                        <span>630</span>
+                                        <span>63</span>
+                                    </div>
+                                    <div class="my-news__name">
+                                        Непутевые работники и как с ними справляться?
+                                    </div>
+                                    <div class="my-news__tags">
+                                        #Мероприятия
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="my-news__image"><img src="./src/images/no-photo.svg" /></div>
+                                <div class="my-news__info">
+                                    <div class="my-news__top">
+                                        <span>25 Января</span>
+                                        <span>630</span>
+                                        <span>63</span>
+                                    </div>
+                                    <div class="my-news__name">
+                                        Непутевые работники и как с ними справляться?
+                                    </div>
+                                    <div class="my-news__tags">
+                                        #Мероприятия
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="my-news__image"><img src="./src/images/no-photo.svg" /></div>
+                                <div class="my-news__info">
+                                    <div class="my-news__top">
+                                        <span>25 Января</span>
+                                        <span>630</span>
+                                        <span>63</span>
+                                    </div>
+                                    <div class="my-news__name">
+                                        Непутевые работники и как с ними справляться?
+                                    </div>
+                                    <div class="my-news__tags">
+                                        #Мероприятия
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     `;
