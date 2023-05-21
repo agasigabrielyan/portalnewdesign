@@ -21,7 +21,7 @@ window.onload = function() {
                         </ul>
                     </div>
                     <div class="collaborate__cell">
-                        <div class="collaborate__heading">CУУЗ<span class="collaborate__star"></span></div>
+                        <div class="collaborate__heading">Система управления задачами<span class="collaborate__star"></span></div>
                          <ul>
                             <li class="collaborate__item"><span>13</span>  Новых задач</li>
                             <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
@@ -62,8 +62,7 @@ window.onload = function() {
                     <ul>
                         <li class="my-services__item">
                             <a href="#">
-                                <span class="my-services__name">Оборудование</span>
-                                <span class="my-services__desc">Получить/Переместить/Вернуть</span>
+                                <span class="my-services__name">Получить справки</span>
                             </a>
                         </li>
                         <li class="my-services__item">
@@ -80,34 +79,20 @@ window.onload = function() {
                     <ul>
                         <li class="my-services__item">
                             <a href="#">
-                                <span class="my-services__name">Оборудование</span>
-                                <span class="my-services__desc">Получить/Переместить/Вернуть</span>
+                                <span class="my-services__name">Бронирование переговорных</span>
                             </a>
                         </li>
                         <li class="my-services__item">
                             <a href="#">
-                                <span class="my-services__name">Магазин канцтоваров</span>
+                                <span class="my-services__name">Увеличить почтовый ящик</span>
                             </a>
                         </li>
                         <li class="my-services__item">
                             <a href="#">
-                                <span class="my-services__name">Заменить картридж</span>
+                                <span class="my-services__name">Получить ИТ-оборудование</span>
                             </a>
                         </li>
-                    </ul>
-                    <ul>
-                        <li class="my-services__item">
-                            <a href="#">
-                                <span class="my-services__name">Оборудование</span>
-                                <span class="my-services__desc">Получить/Переместить/Вернуть</span>
-                            </a>
-                        </li>
-                        <li class="my-services__item">
-                            <a href="#">
-                                <span class="my-services__name">Магазин канцтоваров</span>
-                            </a>
-                        </li>
-                    </ul>
+                    </ul>                   
                 </div>
             </div>
         </div>
@@ -183,7 +168,25 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+        <div class="my-services">
+                    <ul>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">САД ПАО «Газпром»</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">ПУР АСБУ</span>
+                            </a>
+                        </li>
+                        <li class="my-services__item">
+                            <a href="#">
+                                <span class="my-services__name">Статус АСЭЗ</span>
+                            </a>
+                        </li>
+                    </ul>                                      
+                </div>
             </div>
         </div>
     `;
@@ -191,7 +194,7 @@ window.onload = function() {
         <div class="widget">
             <div class="widget__header">
                 <div class="widget__name">
-                    Автобусы
+                    Расписание
                 </div>
                 <a class="widget__link">
                     все

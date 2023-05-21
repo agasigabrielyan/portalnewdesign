@@ -597,7 +597,7 @@ li.lavalamp_active {
     width: 100%;
     height: 150rem;
     text-align: left;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
 }
 
 .upper:before {
@@ -653,6 +653,7 @@ li.lavalamp_active {
     font-size: 26rem;
     line-height: 26rem;
     color: #333333;
+    margin-bottom: 10rem;
 }
 .upper__phone {
     display: flex;
