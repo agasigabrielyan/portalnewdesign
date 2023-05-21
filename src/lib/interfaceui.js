@@ -19,7 +19,6 @@ class InterfaceUI {
         this.menuOutPosition = "90rem";
         this.menuInPosition = "-3000rem";
         this.lastAddedXPosition = 0;
-        this.lastRemovedElement;
         this.gazpromLavalamp = document.querySelector(".gazprom-lavalamp");
         this.lavalamps = document.querySelectorAll(".lavalamp");
 
@@ -44,6 +43,21 @@ class InterfaceUI {
         });
         this.lavalampHandler();
         this.lavalampRemoveHandler();
+        this.setWidgetType();
+    }
+
+    // задание классов типов small, long, high
+    setWidgetType() {
+        let gridStackItems = this.portalGrid.querySelectorAll(".grid-stack-item ");
+        gridStackItems.forEach((el) => {
+            if( el.gridstackNode.h === 1 && el.gridstackNode.w === 1 ) {
+                el.classList.add('grid-stack-item__small');
+            } else if( el.gridstackNode.w === 2 && el.gridstackNode.w !== 1 ) {
+                el.classList.add('grid-stack-item__long');
+            } else if ( el.gridstackNode.h === 2 && el.gridstackNode.w === 1 ) {
+                el.classList.add('grid-stack-item__high');
+            }
+        });
     }
 
     lavalampRemoveHandler() {

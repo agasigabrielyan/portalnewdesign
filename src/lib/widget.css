@@ -16,7 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12rem 25rem 12rem 25rem;
+    padding: 0 25rem 0 25rem;
+    height: 50rem;
 }
 .widget__name {
     font-style: normal;
@@ -56,9 +57,12 @@
 }
 .widget__body {
     position: relative;
-    padding: 12rem 25rem 12rem 25rem;
+    padding: 20rem 25rem 25rem 25rem;
     background: rgba(255, 255, 255, 0.7);
-    height: 100%;
+    height: calc(100% - 50rem);
+}
+.grid-stack-item__under-resizing .widget__body {
+    opacity: 0;
 }
 
 
@@ -67,20 +71,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100%;
 }
-
-.collaborate {
-
-}
-
 .collaborate__cell {
     background: #FFFFFF;
     box-shadow: 0 0 5rem rgba(0, 95, 173, 0.2);
     border-radius: 10rem;
     padding: 13rem 21rem;
+}
+.grid-stack-item__small .collaborate__cell {
+    width: 100%;
+    display: none;
+}
+.grid-stack-item__small .collaborate__cell:first-child {
+    display: block;
+}
+.grid-stack-item__long .collaborate__cell {
     width: calc(50% - 10rem);
 }
-
+.grid-stack-item__high .collaborate__cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grid-stack-item__high .collaborate__cell:first-child {
+    margin-bottom: 10rem;
+}
 .collaborate__heading {
     font-style: normal;
     font-weight: 700;
@@ -88,8 +105,8 @@
     line-height: 21rem;
     margin-bottom: 7rem;
     color: #000;
+    position: relative;
 }
-
 .collaborate__item{
     font-weight: 400;
     font-size: 16rem;
@@ -99,7 +116,6 @@
     align-items: center;
     padding: 3rem 0;
 }
-
 .collaborate__item span {
     width: 30rem;
     height: 30rem;
@@ -112,6 +128,21 @@
     -moz-border-radius: 50%;
     margin-right: 10rem;
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
+.collaborate__star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../images/Star.svg);
+    width: 18rem;
+    height: 19rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+/** настройки виджета с внешним отображением как мои услуги **/
+
 

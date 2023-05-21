@@ -13,7 +13,7 @@ window.onload = function() {
             <div class="widget__body">
                 <div class="collaborate">
                     <div class="collaborate__cell">
-                        <div class="collaborate__heading">Корпоративный портал</div>
+                        <div class="collaborate__heading">Корпоративный портал<span class="collaborate__star"></span></div>
                         <ul>
                             <li class="collaborate__item"><span>13</span>  Новых задач</li>
                             <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
@@ -21,7 +21,7 @@ window.onload = function() {
                         </ul>
                     </div>
                     <div class="collaborate__cell">
-                        <div class="collaborate__heading">CУУЗ</div>
+                        <div class="collaborate__heading">CУУЗ<span class="collaborate__star"></span></div>
                          <ul>
                             <li class="collaborate__item"><span>13</span>  Новых задач</li>
                             <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
@@ -183,7 +183,7 @@ window.onload = function() {
 
     let simpleGrid = GridStack.init({
         column: 3,
-        cellHeight: "260rem",
+        cellHeight: "280rem",
         disableOneColumnMode: true,
         disableDrag: true,
         disableResize: true,
@@ -214,8 +214,15 @@ window.onload = function() {
         }
     });
 
+
+    simpleGrid.on('resizestart', function(event, el) {
+        // зададим класс grid-item__under-resizing при попытке ресайзить grid-item
+        el.classList.add("grid-stack-item__under-resizing");
+    });
+
     // при изменинии размеров отрабатывает этот метод
     simpleGrid.on('resize', function(event, el) {
+
         if(el.gridstackNode.w > 2) {
             el.gridstackNode.w = 2;
         }
@@ -231,6 +238,21 @@ window.onload = function() {
         // добавим и удалим grid-stack-item чтобы инициировать изменение сетки
         simpleGrid.addWidget('<div id="just-a-widget" class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 1, h: 1});
         simpleGrid.removeWidget(document.getElementById("just-a-widget"));
+    });
+
+    simpleGrid.on('resizestop', function(event, el) {
+        el.classList.remove("grid-stack-item__under-resizing");
+
+        // удалим все классы типа блока(small, long, high)
+        el.classList.remove('grid-stack-item__small','grid-stack-item__long','grid-stack-item__high');
+
+        if( el.gridstackNode.h === 1 && el.gridstackNode.w === 1 ) {
+            el.classList.add('grid-stack-item__small');
+        } else if( el.gridstackNode.w === 2 && el.gridstackNode.w !== 1 ) {
+            el.classList.add('grid-stack-item__long');
+        } else if ( el.gridstackNode.h === 2 && el.gridstackNode.w === 1 ) {
+            el.classList.add('grid-stack-item__high');
+        }
     });
 
     // инициализация интерфейса
