@@ -351,6 +351,72 @@
     color: #828282;
 }
 
+/** настройки виджета автобусов **/
+.buses {
+    height: 100%;
+    overflow: hidden;
+}
+
+.buses__title {
+    color: #828282;
+    font-size: 20rem;
+    margin-bottom: 20rem;
+}
+.buses__stations {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+/* Style for the container */
+.buses__stations {
+    overflow: auto; /* Ensures scrollbars appear when needed */
+    scrollbar-width: thin; /* Width of the scrollbar (optional) */
+}
+
+/* Styles for the scrollbar */
+.buses__stations::-webkit-scrollbar {
+    width: 6rem; /* Width of the scrollbar track */
+}
+
+.buses__stations::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+    border-radius: 4rem;
+}
+
+.buses__stations::-webkit-scrollbar-thumb {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb */
+    border-radius: 4rem;
+}
+
+.buses__stations::-webkit-scrollbar-thumb:hover {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
+}
+
+.buses__table {
+    width: 100%;
+}
+
+.buses__table td {
+    font-size: 16rem;
+    color: #333333;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 1rem solid rgba(130,130,130,.5)
+}
+
+.buses__table td:first-child {
+    border-top: 1rem solid rgba(130,130,130,.5)
+}
+
+.buses__table td:nth-child(2n) {
+    font-weight: bold;
+}
+
+.buses__table td:nth-child(3n) {
+    color: #828282;
+    font-size: 12rem;
+}
+
 
 
 

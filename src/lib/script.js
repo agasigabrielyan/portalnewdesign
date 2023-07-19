@@ -306,7 +306,33 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="buses">
+                    <div class="buses__title">
+                        от БЦ “Виктория Плаза” до:
+                    </div>
+                    <div class="buses__stations">
+                        <table class='buses__table'>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                                                        <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                                                        <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                            <tr> <td>м. Московская</td> <td>12:00</td> <td>10 мин.</td> </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -381,7 +407,6 @@ window.onload = function() {
     // при изменинии размеров отрабатывает этот метод
     simpleGrid.on('resize', function(event, el) {
 
-        debugger;
         if(el.gridstackNode.w > 2) {
             el.gridstackNode.w = 2;
         }
@@ -394,7 +419,7 @@ window.onload = function() {
             el.gridstackNode.h = 1;
         }
 
-        if( el.gridstackNode.content.includes('my-news') && el.gridstackNode.w >= 2) {
+        if( ( el.gridstackNode.content.includes('my-news') || el.gridstackNode.content.includes('buses') ) && el.gridstackNode.w >= 2) {
             el.gridstackNode.w = 1;
         }
 
