@@ -411,6 +411,7 @@
 }
 .my-request__wrapper {
     width: 50%;
+    margin-bottom: 20rem;
 }
 .my-request__wrapper:first-child {
     margin-right: 20rem;
@@ -557,6 +558,21 @@
 .my-request__code span.my-request_done {
     color: #05b958;
     border: 1px solid #05b958;
+}
+
+.grid-stack-item__high .my-request, .grid-stack-item__small .my-request {
+    display: block;
+}
+
+.grid-stack-item__high .my-request__all, .grid-stack-item__small .my-request__all {
+    height: 260rem;
+}
+
+.grid-stack-item__high .my-request .my-request__wrapper, .grid-stack-item__small .my-request .my-request__wrapper {
+    width: 100%;
+}
+.grid-stack-item__small .my-request .my-request__wrapper:last-child {
+    display: none;
 }
 
 
