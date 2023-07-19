@@ -365,11 +365,11 @@ window.onload = function() {
                         
                         <div class='my-request__send-area'>
                             <div class='my-request__send'>
-                                Отправить
+                                Отправить:
                             </div>
                             <div class='my-request__req-type'>
                                 <ul>
-                                    <li>ИТ запрос</li>
+                                    <li class='active'>ИТ запрос</li>
                                     <li>Хоз. запрос</li>
                                 </ul>
                             </div>
