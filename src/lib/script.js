@@ -186,9 +186,17 @@ window.onload = function() {
                                 <div class="my-news__image"><img src="./src/images/no-photo.svg" /></div>
                                 <div class="my-news__info">
                                     <div class="my-news__top">
-                                        <span>25 Января</span>
-                                        <span>630</span>
-                                        <span>63</span>
+                                        <span class='my-news__date'>25 Января</span>
+                                           <div>
+                                                <span class='my-news__watch'>
+                                                    <img src='./src/images/watch.svg' />
+                                                    630
+                                                </span>
+                                                <span class='my-news__like'>
+                                                    <img src='./src/images/like.svg' />
+                                                    63
+                                                </span>
+                                            </div>                                    
                                     </div>
                                     <div class="my-news__name">
                                         Непутевые работники и как с ними справляться?
@@ -202,9 +210,17 @@ window.onload = function() {
                                 <div class="my-news__image"><img src="./src/images/no-photo.svg" /></div>
                                 <div class="my-news__info">
                                     <div class="my-news__top">
-                                        <span>25 Января</span>
-                                        <span>630</span>
-                                        <span>63</span>
+                                        <span class='my-news__date'>25 Января</span>
+                                           <div>
+                                                <span class='my-news__watch'>
+                                                    <img src='./src/images/watch.svg' />
+                                                    630
+                                                </span>
+                                                <span class='my-news__like'>
+                                                    <img src='./src/images/like.svg' />
+                                                    63
+                                                </span>
+                                            </div>    
                                     </div>
                                     <div class="my-news__name">
                                         Непутевые работники и как с ними справляться?
@@ -218,9 +234,19 @@ window.onload = function() {
                                 <div class="my-news__image"><img src="./src/images/no-photo.svg" /></div>
                                 <div class="my-news__info">
                                     <div class="my-news__top">
-                                        <span>25 Января</span>
-                                        <span>630</span>
-                                        <span>63</span>
+                                        <span class='my-news__date'>25 Января</span>
+
+                                            <div>
+                                                <span class='my-news__watch'>
+                                                    <img src='./src/images/watch.svg' />
+                                                    630
+                                                </span>
+                                                <span class='my-news__like'>
+                                                    <img src='./src/images/like.svg' />
+                                                    63
+                                                </span>
+                                            </div>    
+
                                     </div>
                                     <div class="my-news__name">
                                         Непутевые работники и как с ними справляться?
