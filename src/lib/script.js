@@ -381,6 +381,7 @@ window.onload = function() {
     // при изменинии размеров отрабатывает этот метод
     simpleGrid.on('resize', function(event, el) {
 
+        debugger;
         if(el.gridstackNode.w > 2) {
             el.gridstackNode.w = 2;
         }
@@ -392,6 +393,11 @@ window.onload = function() {
         if( el.gridstackNode.w >= 2 && el.gridstackNode.h === 2) {
             el.gridstackNode.h = 1;
         }
+
+        if( el.gridstackNode.content.includes('my-news') && el.gridstackNode.w >= 2) {
+            el.gridstackNode.w = 1;
+        }
+
 
         // добавим и удалим grid-stack-item чтобы инициировать изменение сетки
         simpleGrid.addWidget('<div id="just-a-widget" class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 1, h: 1});
