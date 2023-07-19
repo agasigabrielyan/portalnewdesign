@@ -409,19 +409,15 @@
     display: flex;
     height: 100%;
 }
-
 .my-request__wrapper {
     width: 50%;
 }
-
 .my-request__wrapper:first-child {
     margin-right: 20rem;
 }
-
 .my-request__textarea {
 
 }
-
 .my-request__textarea textarea {
     border:1rem solid #BDBDBD;
     height: 91rem;
@@ -449,7 +445,6 @@
     border: 1px solid #BDBDBD;
     margin-right: 10rem;
 }
-
 .my-request__file:before {
     content: "Приложите файл";
     position: absolute;
@@ -464,15 +459,12 @@
     color: #BDBDBD;
     cursor: pointer;
 }
-
 .my-request__file input {
     opacity: 0;
 }
-
 .my-request__file input:before {
     content: "Руддщ";
 }
-
 .my-request__type {
     border: 1px solid #bdbdbd;
     color: #bdbdbd;
@@ -505,7 +497,6 @@
     border-radius: 100rem;
     height: 30rem;
 }
-
 .my-request__req-type ul li {
     color:#fff;
     font-size: 16px;
@@ -516,12 +507,10 @@
     align-items: center;
     display: flex;
 }
-
 .my-request__req-type ul li.active {
     background-color: #bdbdbd;
     border-radius: 100rem;
 }
-
 .my-request__req-type {
 
 }
@@ -529,7 +518,6 @@
     height: 100%;
     overflow-y: scroll;
 }
-
 .my-request__all::-webkit-scrollbar {
     width: 6rem; /* Width of the scrollbar track */
 }
@@ -544,20 +532,32 @@
 .my-request__all::-webkit-scrollbar-thumb:hover {
     background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
 }
-
 .my-request__single {
 
 }
 .my-request__code {display: flex;}
-.my-request__code span:first-child{ color: #2A2A30; font-weight: bold; margin-right: 20rem; }
-.my-request__code span:nth-child(2n){ color: #0079C2; border: 1px solid #0079C2; }
+.my-request__code span:first-child{
+    color: #2A2A30;
+    font-weight: bold;
+    margin-right: 20rem;
+}
+.my-request__code span:nth-child(2n){
+    color: #0079C2;
+    border: 1px solid #0079C2;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    border-radius: 100rem;
+}
 .my-request__text {
     color: #828282;
     font-size: 16rem;
     padding-right: 15rem;
     margin-bottom: 15rem;
 }
-
+.my-request__code span.my-request_done {
+    color: #05b958;
+    border: 1px solid #05b958;
+}
 
 
 

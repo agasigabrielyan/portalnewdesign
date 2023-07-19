@@ -393,7 +393,7 @@ window.onload = function() {
                             <div class='my-request__single'>
                                 <div class='my-request__code'>
                                     <span>RADFASESER</span>
-                                    <span>в работе</span> 
+                                    <span class='my-request_done'>завершен</span> 
                                 </div>
                                 <div class='my-request__text'>
                                     Ввиду производственной необходимости для совещаний в VK Teams тебуются наушники LOGI USB, видео камера.
