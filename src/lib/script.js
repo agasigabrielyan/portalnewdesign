@@ -347,7 +347,13 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class='my-request'>
+                    <div class='my-request__textarea'>
+                        <textarea>
+                            my text in textarea
+                        </textarea>
+                    </div>
+                </div>
             </div>
         </div>
     `;
