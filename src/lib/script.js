@@ -353,14 +353,16 @@ window.onload = function() {
                         <div class='my-request__textarea'>
                             <textarea placeholder="Введите комментарий"></textarea>
                         </div>
+                        
                         <div class='my-request__file-area'>
                             <div class='my-request__file'>
-                                приложите файл
+                                <input type='file' />
                             </div>
                             <div class='my-request__type'>
                                 Уточнить запрос                           
                             </div>
                         </div>
+                        
                         <div class='my-request__send-area'>
                             <div class='my-request__send'>
                                 Отправить
@@ -372,10 +374,12 @@ window.onload = function() {
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
                     
                     <div class='my-request__wrapper'>
                         <div class='my-request__all'>
+                        
                             <div class='my-request__single'>
                                 <div class='my-request__code'>
                                     <span>RADFASESER</span>
@@ -385,6 +389,37 @@ window.onload = function() {
                                     Ввиду производственной необходимости для совещаний в VK Teams тебуются наушники LOGI USB, видео камера.
                                 </div>
                             </div>
+                            
+                            <div class='my-request__single'>
+                                <div class='my-request__code'>
+                                    <span>RADFASESER</span>
+                                    <span>в работе</span> 
+                                </div>
+                                <div class='my-request__text'>
+                                    Ввиду производственной необходимости для совещаний в VK Teams тебуются наушники LOGI USB, видео камера.
+                                </div>
+                            </div>
+                            
+                            <div class='my-request__single'>
+                                <div class='my-request__code'>
+                                    <span>RADFASESER</span>
+                                    <span>в работе</span> 
+                                </div>
+                                <div class='my-request__text'>
+                                    Ввиду производственной необходимости для совещаний в VK Teams тебуются наушники LOGI USB, видео камера.
+                                </div>
+                            </div>
+                            
+                            <div class='my-request__single'>
+                                <div class='my-request__code'>
+                                    <span>RADFASESER</span>
+                                    <span>в работе</span> 
+                                </div>
+                                <div class='my-request__text'>
+                                    Ввиду производственной необходимости для совещаний в VK Teams тебуются наушники LOGI USB, видео камера.
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     
