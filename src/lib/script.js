@@ -15,17 +15,17 @@ window.onload = function() {
                     <div class="collaborate__cell">
                         <div class="collaborate__heading">Корпоративный портал<span class="collaborate__star"></span></div>
                         <ul>
-                            <li class="collaborate__item"><span>13</span>  Новых задач</li>
-                            <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
-                            <li class="collaborate__item"><span>8 </span>  Новых документов</li>
+                            <li class="collaborate__item"><div>13</div>  Новых задач</li>
+                            <li class="collaborate__item"><div>27</div>  Новых комментариев</li>
+                            <li class="collaborate__item"><div>8 </div>  Новых документов</li>
                         </ul>
                     </div>
                     <div class="collaborate__cell">
                         <div class="collaborate__heading">Система управления задачами<span class="collaborate__star"></span></div>
                          <ul>
-                            <li class="collaborate__item"><span>13</span>  Новых задач</li>
-                            <li class="collaborate__item"><span>27</span>  Новых комментариев</li>
-                            <li class="collaborate__item"><span>8 </span>  Новых документов</li>
+                            <li class="collaborate__item"><div>13</div>  Новых задач</li>
+                            <li class="collaborate__item"><div>27</div>  Новых комментариев</li>
+                            <li class="collaborate__item"><div>8 </div>  Новых документов</li>
                         </ul>
                     </div>
                 </div>
@@ -170,15 +170,15 @@ window.onload = function() {
             <div class="widget__body">
                 <div class="my-news">
                     <div class="my-news__search">
-                        <input type="text" />
+                        <input type="text" placeholder="поиск" />
                     </div>
                     <div class="my-news__filter">
                         <div class="my-news__filter-item">Все новости</div>
-                        <div class="my-news__filter-item">Департамент</div>
+                        <div class="my-news__filter-item">Группы</div>
                         <div class="my-news__filter-item">Отдых</div>
+                        <div class="my-news__filter-item">Департамент</div>
                         <div class="my-news__filter-item">Мероприятия</div>
                         <div class="my-news__filter-item">Сообщества</div>
-                        <div class="my-news__filter-item">Группы</div>
                     </div>
                     <div class="my-news__list">
                         <ul>
