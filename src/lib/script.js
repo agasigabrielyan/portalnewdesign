@@ -353,6 +353,36 @@ window.onload = function() {
                             my text in textarea
                         </textarea>
                     </div>
+                    <div class='my-request__file-area'>
+                        <div class='my-request__file'>
+                            приложите файл
+                        </div>
+                        <div class='my-request__type'>
+                            Уточнить запрос                           
+                        </div>
+                    </div>
+                    <div class='my-request__send-area'>
+                        <div class='my-request__send'>
+                            Отправить
+                        </div>
+                        <div class='my-request__req-type'>
+                            <ul>
+                                <li>ИТ запрос</li>
+                                <li>Хоз. запрос</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='my-request__all'>
+                        <div class='my-request__single'>
+                            <div class='my-request__code'>
+                                <span>RADFASESER</span>
+                                <span>в работе</span> 
+                            </div>
+                            <div class='my-request__text'>
+                                Ввиду производственной необходимости для совещаний в VK Teams тебуются наушники LOGI USB, видео камера.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
