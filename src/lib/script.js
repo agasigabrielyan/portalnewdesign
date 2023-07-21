@@ -66,9 +66,9 @@ window.onload = function() {
                          <div class="my-calendar__area">
                             <div class="my-calendar__calendar">
                                 <div class="my-calendar__title">
-                                    <button><</button>
-                                        Апрель 2023
-                                    <button>></button>
+                                    <button><img src='./src/images/calendar__left-arrow.svg' /></button>
+                                    <span>Апрель 2023</span>
+                                    <button><img src='./src/images/calendar__right-arrow.svg' /></button>
                                 </div>
                                 <div class="my-calendar__digits">
                                     <table>
