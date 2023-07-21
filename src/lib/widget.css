@@ -575,7 +575,7 @@
 
 /** настройки для виджета календарь **/
 .my-calendar {
-
+    position: relative;
 }
 .my-calendar__search {
     display: flex;
@@ -710,7 +710,11 @@
 .my-events__event tr td:nth-child(2n) {
     color: #828282;
 }
-.my-calendar__add {}
+.my-calendar__add {
+    position: absolute;
+    top: calc(100% + 15rem);
+    width: 100%;
+}
 .my-calendar__button {
     background-color: #80BCE0;
     color: #fff;

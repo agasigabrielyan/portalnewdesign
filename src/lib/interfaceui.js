@@ -52,16 +52,19 @@ class InterfaceUI {
 
         this.myCalendarIcon.forEach((item) => {
             item.addEventListener('click', (item) => {
-                this.unsetActiveFromIcon();
+                let allIcons = document.querySelectorAll(".my-calendar__icon");
+                allIcons.forEach((item)=>{
+                    item.classList.remove("my-calendar__icon_active");
+                });
                 item.currentTarget.classList.add("my-calendar__icon_active");
+                let dataType = item.currentTarget.dataset.type;
+                if( dataType != null ) {
+                    let allAreas = document.querySelectorAll(".my-calendar__area");
+                    allAreas.forEach((area) => {
+                        area.classList.contains("my-calendar__area_" + dataType) ? area.classList.add("my-calendar__area_active") : area.classList.remove("my-calendar__area_active");
+                    });
+                }
             })
-        });
-    }
-
-    unsetActiveFromIcon() {
-        let allIcons = document.querySelectorAll(".my-calendar__icon");
-        allIcons.forEach((item)=>{
-            item.classList.remove("my-calendar__icon_active");
         });
     }
 

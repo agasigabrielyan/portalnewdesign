@@ -52,10 +52,10 @@ window.onload = function() {
 
 
                             <div class="my-calendar__icons">
-                                <div class="my-calendar__icon my-calendar__icon_active">
+                                <div data-type='calendar' class="my-calendar__icon my-calendar__icon_active">
                                     <img src="./src/images/calendar.svg" />
                                 </div>
-                                <div class="my-calendar__icon">
+                                <div data-type='event' class="my-calendar__icon">
                                     <img src="./src/images/listicon.svg" />
                                 </div>
                             </div>
