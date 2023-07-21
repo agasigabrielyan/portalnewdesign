@@ -43,7 +43,28 @@ window.onload = function() {
                 </a>
             </div>
             <div class="widget__body">
-        
+                <div class="my-calendar">                    
+                    <div class="my-calendar__search">
+                        Это поиск для моего календаря
+                    </div>
+                    
+                    <div class="my-calendar__area-wrapper">
+                         <div class="my-calendar__area">
+                            <div class="my-calendar__calendar">
+                                тут прям календарь будет
+                            </div>                        
+                        </div>
+                        <div class="my-calendar__area">
+                            тут будут события если шта
+                        </div>
+                    </div>
+                    
+                    <div class="my-calendar__add">
+                            <div class="my-calendar__button">
+                                +Создать событие
+                            </div>
+                    </div>                    
+                </div>
             </div>
         </div>
     `;
