@@ -45,17 +45,153 @@ window.onload = function() {
             <div class="widget__body">
                 <div class="my-calendar">                    
                     <div class="my-calendar__search">
-                        Это поиск для моего календаря
+                        <div>
+                            <div class="my-news__search">
+                                <input type="text" placeholder="поиск">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-calendar__icons">
+                                <div class="my-calendar__icon">
+                                    Календарь
+                                </div>
+                                <div class="my-calendar__icon">
+                                    Список
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="my-calendar__area-wrapper">
                          <div class="my-calendar__area">
                             <div class="my-calendar__calendar">
-                                тут прям календарь будет
+                                <div class="my-calendar__title">
+                                    <button><</button>
+                                        Апрель 2023
+                                    <button>></button>
+                                </div>
+                                <div class="my-calendar__digits">
+                                    <table>
+                                        <tr>
+                                            <td>Пн</td>
+                                            <td>Вт</td>
+                                            <td>Ср</td>
+                                            <td>Чт</td>
+                                            <td>Пт</td>
+                                            <td>Сб</td>
+                                            <td>Вс</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>                        
                         </div>
                         <div class="my-calendar__area">
-                            тут будут события если шта
+                            <div class="my-events">
+                                <div class="my-events__date">
+                                    22 марта 2023
+                                </div>
+                                <div class="my-events__list">
+                                    <div class="my-events__event">
+                                        <table>
+                                            <tr>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="my-events__date">
+                                    22 марта 2023
+                                </div>
+                                <div class="my-events__list">
+                                    <div class="my-events__event">
+                                        <table>
+                                            <tr>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="my-events__date">
+                                    22 марта 2023
+                                </div>
+                                <div class="my-events__list">
+                                    <div class="my-events__event">
+                                        <table>
+                                            <tr>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     

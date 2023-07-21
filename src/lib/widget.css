@@ -559,21 +559,44 @@
     color: #05b958;
     border: 1px solid #05b958;
 }
-
 .grid-stack-item__high .my-request, .grid-stack-item__small .my-request {
     display: block;
 }
-
 .grid-stack-item__high .my-request__all, .grid-stack-item__small .my-request__all {
     height: 260rem;
 }
-
 .grid-stack-item__high .my-request .my-request__wrapper, .grid-stack-item__small .my-request .my-request__wrapper {
     width: 100%;
 }
 .grid-stack-item__small .my-request .my-request__wrapper:last-child {
     display: none;
 }
+
+
+/** настройки для виджета календарь **/
+.my-calendar {}
+.my-calendar__search {}
+.my-calendar__icons {}
+.my-calendar__icon {}
+.my-calendar__area-wrapper {}
+.my-calendar__area {}
+.my-calendar__calendar {}
+.my-calendar__title {}
+.my-calendar__calendar button {}
+.my-calendar__digits {}
+.my-calendar__digits table {}
+.my-calendar__digits tr {}
+.my-calendar__digits td {}
+
+.my-events {}
+.my-events__date {}
+.my-events__list {}
+.my-events__event {}
+.my-events__event table {}
+.my-events__event tr {}
+.my-events__event td {}
+.my-calendar__add {}
+.my-calendar__button {}
 
 
 
