@@ -63,7 +63,7 @@ window.onload = function() {
                     </div>
                     
                     <div class="my-calendar__area-wrapper">
-                         <div class="my-calendar__area">
+                         <div class="my-calendar__area my-calendar__area_active">
                             <div class="my-calendar__calendar">
                                 <div class="my-calendar__title">
                                     <button><img src='./src/images/calendar__left-arrow.svg' /></button>
@@ -145,35 +145,19 @@ window.onload = function() {
                                             <tr>
                                                 <td>10:00</td>
                                                 <td>
-                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                    <span class='event-title'>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>10:00</td>
                                                 <td>
-                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                    <span class='event-title'>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>10:00</td>
                                                 <td>
-                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                
-                                <div class="my-events__date">
-                                    22 марта 2023
-                                </div>
-                                <div class="my-events__list">
-                                    <div class="my-events__event">
-                                        <table>
-                                            <tr>
-                                                <td>10:00</td>
-                                                <td>
-                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                    <span class='event-title'>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
                                                 </td>
                                             </tr>
                                         </table>
@@ -189,7 +173,23 @@ window.onload = function() {
                                             <tr>
                                                 <td>10:00</td>
                                                 <td>
-                                                    <span>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                    <span class='event-title'>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="my-events__date">
+                                    22 марта 2023
+                                </div>
+                                <div class="my-events__list">
+                                    <div class="my-events__event">
+                                        <table>
+                                            <tr>
+                                                <td>10:00</td>
+                                                <td>
+                                                    <span class='event-title'>Совещания на Новоданиловской</span><br/><span>#Мероприятия</span>
                                                 </td>
                                             </tr>
                                         </table>

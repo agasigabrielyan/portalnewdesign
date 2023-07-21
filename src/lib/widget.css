@@ -610,8 +610,23 @@
     border-radius: 50%;
 }
 
-.my-calendar__area-wrapper {}
-.my-calendar__area {}
+.my-calendar__area-wrapper {
+    position: relative;
+    height: 300rem;
+}
+.my-calendar__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.my-calendar__area_active {
+    z-index: 2;
+}
 
 .my-calendar__calendar {}
 .my-calendar__title {
@@ -665,16 +680,35 @@
 }
 
 .my-events {}
-.my-events__date {}
+.my-events__date {
+    font-size: 18rem;
+    color: #626262;
+}
 .my-events__list {}
 .my-events__event {}
 .my-events__event table {
     width: 100%;
 }
 .my-events__event tr {}
-.my-events__event td {}
+.my-events__event tr td{
+    height: 56rem;
+    font-size: 16rem;
+}
+.my-events__event td:first-child {
+    color: #2A2A30;
+}
+.my-events__event td:nth-child(2n) {
+    color: #2A2A30;
+}
+.my-events__event tr td:nth-child(2n) {
+    color: #828282;
+}
 .my-calendar__add {}
 .my-calendar__button {}
+.event-title {
+    color: #2A2A30;
+    font-weight: bold;
+}
 
 
 
