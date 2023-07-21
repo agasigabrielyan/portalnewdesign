@@ -201,7 +201,7 @@ window.onload = function() {
                     
                     <div class="my-calendar__add">
                             <div class="my-calendar__button">
-                                +Создать событие
+                                + <span>Создать событие</span>
                             </div>
                     </div>                    
                 </div>

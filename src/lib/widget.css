@@ -533,6 +533,7 @@
 .my-request__all::-webkit-scrollbar-thumb:hover {
     background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
 }
+
 .my-request__single {
 
 }
@@ -622,15 +623,26 @@
     height: 100%;
     background-color: #fff;
 }
-
+.my-calendar__area::-webkit-scrollbar {
+    width: 6rem; /* Width of the scrollbar track */
+}
+.my-calendar__area::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+    border-radius: 4rem;
+}
+.my-calendar__area::-webkit-scrollbar-thumb {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb */
+    border-radius: 4rem;
+}
+.my-calendar__area::-webkit-scrollbar-thumb:hover {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
+}
 .my-calendar__area_active {
     z-index: 2;
 }
-
 .my-calendar__area_events {
     overflow-y: scroll;
 }
-
 .my-calendar__area_calendar {
     overflow: hidden;
 }
@@ -674,7 +686,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .my-calendar__calendar .my-calendar__event_blue span{
     background-color: blue;
     color: #fff;
@@ -712,7 +723,7 @@
 }
 .my-calendar__add {
     position: absolute;
-    top: calc(100% + 15rem);
+    top: calc(100% + 5rem);
     width: 100%;
 }
 .my-calendar__button {
@@ -729,6 +740,27 @@
     font-weight: bold;
 }
 
+
+.grid-stack-item__small .my-calendar__area-wrapper {
+    position: relative;
+    height: 80rem;
+}
+.grid-stack-item__small .my-calendar__add {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    top: 0;
+    right: 0;
+}
+.grid-stack-item__small .my-calendar__add span {
+    display: none;
+}
+.grid-stack-item__small .my-calendar__icons {
+    display: none;
+}
+.grid-stack-item__small .my-calendar__search .my-news__search {
+    width: 80%;
+}
 
 
 
