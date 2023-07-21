@@ -45,21 +45,21 @@ window.onload = function() {
             <div class="widget__body">
                 <div class="my-calendar">                    
                     <div class="my-calendar__search">
-                        <div>
+
                             <div class="my-news__search">
                                 <input type="text" placeholder="поиск">
                             </div>
-                        </div>
-                        <div>
+
+
                             <div class="my-calendar__icons">
-                                <div class="my-calendar__icon">
-                                    Календарь
+                                <div class="my-calendar__icon my-calendar__icon_active">
+                                    <img src="./src/images/calendar.svg" />
                                 </div>
                                 <div class="my-calendar__icon">
-                                    Список
+                                    <img src="./src/images/listicon.svg" />
                                 </div>
                             </div>
-                        </div>
+
                     </div>
                     
                     <div class="my-calendar__area-wrapper">

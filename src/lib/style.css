@@ -21,6 +21,11 @@ html {
     /*transition: background-image 0.5s;*/
 }
 
+.grid-stack>.grid-stack-item>.grid-stack-item-content {
+    background-color: #fff;
+    border: none;
+}
+
 .delete-widget__overflow {
     position: fixed;
     top: 0;
