@@ -63,7 +63,7 @@ window.onload = function() {
                     </div>
                     
                     <div class="my-calendar__area-wrapper">
-                         <div class="my-calendar__area my-calendar__area_active">
+                         <div class="my-calendar__area my-calendar__area_calendar my-calendar__area_active">
                             <div class="my-calendar__calendar">
                                 <div class="my-calendar__title">
                                     <button><img src='./src/images/calendar__left-arrow.svg' /></button>
@@ -134,7 +134,7 @@ window.onload = function() {
                                 </div>
                             </div>                        
                         </div>
-                        <div class="my-calendar__area">
+                        <div class="my-calendar__area my-calendar__area_events">
                             <div class="my-events">
                                 <div class="my-events__date">
                                     22 марта 2023

@@ -21,6 +21,7 @@ class InterfaceUI {
         this.lastAddedXPosition = 0;
         this.gazpromLavalamp = document.querySelector(".gazprom-lavalamp");
         this.lavalamps = document.querySelectorAll(".lavalamp");
+        this.myCalendarIcon = document.querySelectorAll(".my-calendar__icon");
 
         // инициализация методов
         this.interfaceEditButtonClickHandler();
@@ -44,6 +45,24 @@ class InterfaceUI {
         this.lavalampHandler();
         this.lavalampRemoveHandler();
         this.setWidgetType();
+        this.myCalendarIconHandler();
+    }
+
+    myCalendarIconHandler() {
+
+        this.myCalendarIcon.forEach((item) => {
+            item.addEventListener('click', (item) => {
+                this.unsetActiveFromIcon();
+                item.currentTarget.classList.add("my-calendar__icon_active");
+            })
+        });
+    }
+
+    unsetActiveFromIcon() {
+        let allIcons = document.querySelectorAll(".my-calendar__icon");
+        allIcons.forEach((item)=>{
+            item.classList.remove("my-calendar__icon_active");
+        });
     }
 
     // задание классов типов small, long, high
