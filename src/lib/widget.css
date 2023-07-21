@@ -574,7 +574,9 @@
 
 
 /** настройки для виджета календарь **/
-.my-calendar {}
+.my-calendar {
+
+}
 .my-calendar__search {
     display: flex;
     align-items: center;
@@ -607,21 +609,58 @@
     background-color: #80bce0;
     border-radius: 50%;
 }
+
 .my-calendar__area-wrapper {}
 .my-calendar__area {}
+
 .my-calendar__calendar {}
 .my-calendar__title {}
 .my-calendar__calendar button {}
 .my-calendar__digits {}
-.my-calendar__digits table {}
+.my-calendar__digits table {
+    width: 100%;
+}
 .my-calendar__digits tr {}
-.my-calendar__digits td {}
+.my-calendar__digits td {
+    height: 40rem;
+    width: 40rem;
+    margin-bottom: 10rem;
+}
+
+.my-calendar__calendar thead td {
+    font-weight: bold;
+}
+.my-calendar__calendar td span{
+    font-size: 16rem;
+    color: #333;
+    border: 1px solid transparent;
+    width: 40rem;
+    height: 40rem;
+    text-align: center;
+    border-radius: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-calendar__calendar .my-calendar__event_blue span{
+    background-color: blue;
+    color: #fff;
+}
+.my-calendar__calendar .my-calendar__event_outline span{
+    border: 1px solid #80BCE0;
+}
+.my-calendar__calendar .my-calendar__event_vacation span{
+    color: red;
+}
 
 .my-events {}
 .my-events__date {}
 .my-events__list {}
 .my-events__event {}
-.my-events__event table {}
+.my-events__event table {
+    width: 100%;
+}
 .my-events__event tr {}
 .my-events__event td {}
 .my-calendar__add {}

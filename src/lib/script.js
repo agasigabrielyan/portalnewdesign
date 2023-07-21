@@ -72,60 +72,64 @@ window.onload = function() {
                                 </div>
                                 <div class="my-calendar__digits">
                                     <table>
-                                        <tr>
-                                            <td>Пн</td>
-                                            <td>Вт</td>
-                                            <td>Ср</td>
-                                            <td>Чт</td>
-                                            <td>Пт</td>
-                                            <td>Сб</td>
-                                            <td>Вс</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>2</td>
-                                            <td>3</td>
-                                            <td>4</td>
-                                            <td>5</td>
-                                            <td>6</td>
-                                            <td>7</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>9</td>
-                                            <td>10</td>
-                                            <td>11</td>
-                                            <td>12</td>
-                                            <td>13</td>
-                                            <td>14</td>
-                                        </tr>
-                                        <tr>
-                                            <td>15</td>
-                                            <td>16</td>
-                                            <td>17</td>
-                                            <td>18</td>
-                                            <td>19</td>
-                                            <td>20</td>
-                                            <td>21</td>
-                                        </tr>
-                                        <tr>
-                                            <td>22</td>
-                                            <td>23</td>
-                                            <td>24</td>
-                                            <td>25</td>
-                                            <td>26</td>
-                                            <td>27</td>
-                                            <td>28</td>
-                                        </tr>
-                                        <tr>
-                                            <td>29</td>
-                                            <td>30</td>
-                                            <td>31</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
+                                        <thead>
+                                            <tr>
+                                                <td><span> Пн   </span></td>
+                                                <td><span> Вт   </span></td>
+                                                <td><span> Ср   </span></td>
+                                                <td><span> Чт   </span></td>
+                                                <td><span> Пт   </span></td>
+                                                <td><span> Сб   </span></td>
+                                                <td><span> Вс   </span></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><span> 1    </span></td>
+                                                <td><span> 2    </span></td>
+                                                <td><span> 3    </span></td>
+                                                <td><span> 4    </span></td>
+                                                <td><span> 5    </span></td>
+                                                <td><span> 6    </span></td>
+                                                <td><span> 7    </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span> 8    </span></td>
+                                                <td><span> 9    </span></td>
+                                                <td class="my-calendar__event_blue"><span> 10   </span></td>
+                                                <td class="my-calendar__event_outline"><span> 11    </span></td>
+                                                <td class="my-calendar__event_vacation"><span> 12   </span></td>
+                                                <td><span> 13   </span></td>
+                                                <td><span> 14   </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span> 15   </span></td>
+                                                <td><span> 16   </span></td>
+                                                <td><span> 17   </span></td>
+                                                <td><span> 18   </span></td>
+                                                <td><span> 19   </span></td>
+                                                <td><span> 20   </span></td>
+                                                <td><span> 21   </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span> 22   </span></td>
+                                                <td><span> 23   </span></td>
+                                                <td><span> 24   </span></td>
+                                                <td><span> 25   </span></td>
+                                                <td><span> 26   </span></td>
+                                                <td><span> 27   </span></td>
+                                                <td><span> 28   </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span> 29   </span></td>
+                                                <td><span> 30   </span></td>
+                                                <td><span> 31   </span></td>
+                                                <td><span>  </span></td>
+                                                <td><span>  </span></td>
+                                                <td><span>  </span></td>
+                                                <td><span>  </span></td>
+                                            </tr>
+                                        </tbody>                                        
                                     </table>
                                 </div>
                             </div>                        
